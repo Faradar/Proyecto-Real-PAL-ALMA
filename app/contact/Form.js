@@ -171,7 +171,7 @@ function Form() {
             ></textarea>
             <div className="flex flex-col mt-6 md:flex-row justify-center text-center align-middle">
               <ReCAPTCHA sitekey="6LdFziQpAAAAAGhXSwnACFKslGmlJSRwanLe9VqB" onChange={val => setCapVal(val)} className="justify-center" />
-              <button className="border-2 border-black flex justify-center text-center mt-2 md:mt-0 md:ml-4 md:w-full text-xl py-2 md:py-6 hover:bg-black-70" disabled={!capVal} onClick={handleSend}>Enviar <span><FiSend /></span> </button>
+              <button className="border-2 rounded-2xl border-orange-500 bg-orange-500 flex justify-center text-center mt-2 md:mt-0 md:ml-4 md:w-full text-xl md:text-2xl lg:text-3xl py-2 md:py-6 transition duration-150 hover:bg-orange-600 hover:ease-linear" disabled={!capVal} onClick={handleSend}>Enviar <span><FiSend /></span> </button>
             </div>
           </div>
         </form>
