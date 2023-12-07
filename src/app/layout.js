@@ -1,8 +1,8 @@
 import { Quicksand } from "next/font/google";
-import "../src/global.css";
+import "./global.css";
 
 // Components
-import Navbar from "../src/components/navbar/Navbar";
+import Navbar from "../components/navbar/Navbar";
 
 const quicksand = Quicksand({ subsets: ["latin"] });
 
