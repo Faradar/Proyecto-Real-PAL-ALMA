@@ -1,11 +1,11 @@
-import Banner from './Banner';
+
 import Form from './Form'
 
 function page() {
 
   return (
     <main className="w-full">
-      <Banner/>
+      
       <p className='flex justify-center text-lg lg:text-2xl my-4'>Pa´l alma tiene su casa en Córdoba Capital, Argentina</p>
       <section className='w-10/12 lg:w-9/12 flex flex-col md:flex-row mx-auto my-10'>
         <iframe className='hidden md:flex lg:w-1/2' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d435912.82546369446!2d-64.52316931405804!3d-31.39844705868742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1701523180236!5m2!1ses-419!2sar" width="500" height="350" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
