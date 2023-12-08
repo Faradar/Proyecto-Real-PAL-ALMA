@@ -4,7 +4,7 @@ function page() {
   return (
     <main className="w-full">
       <p className="flex justify-center text-lg lg:text-2xl my-4">
-        Pa´l alma tiene su casa en Córdoba Capital, Argentina
+        Pa'l alma tiene su casa en Córdoba Capital, Argentina
       </p>
       <section className="w-10/12 lg:w-9/12 flex flex-col md:flex-row mx-auto my-10">
         <iframe
