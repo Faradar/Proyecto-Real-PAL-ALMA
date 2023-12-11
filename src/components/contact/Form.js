@@ -70,7 +70,7 @@ function Form() {
       setErrMessage(true);
     }
     if (clientName && email && EmailValidation(email) && messages) {
-      axios.post("https://getform.io/f/58ffa1a4-f93e-4bc9-ac6c-21e70903a041", {
+      axios.post("https://getform.io/f/549aaa00-ea72-404c-9994-9623995ba814", {
         name: clientName,
         email: email,
         message: messages,
@@ -87,7 +87,7 @@ function Form() {
   };
 
   return (
-    <section className="w-10/12 mx-auto mt-10">
+    <section className="w-10/12 md:w-8/12 mx-auto mt-10">
       {successMsg ? (
         <p className="text-center text-base font-titleFont p-20 text-designColor">
           {successMsg}
