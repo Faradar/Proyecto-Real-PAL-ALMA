@@ -1,10 +1,10 @@
 
-import Talleres from '../components/talleres/talleres.jsx'
+// import Image from "next/image";
 
 export default function Home() {
   return (
-    <main>
-      <Talleres/>
-    </main>
+    <div>
+      <div>asd</div>
+    </div>
   );
 }
