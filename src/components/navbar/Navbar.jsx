@@ -97,7 +97,7 @@ const Navbar = () => {
         <div className="relative w-[100px] h-[75px]">
           <div className="z-10 w-full h-full absolute ">
             <Link
-              href="/contact"
+              href="/contacto"
               className="flex justify-center items-center w-full h-full"
             >
               CONTACTO
