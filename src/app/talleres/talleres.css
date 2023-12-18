@@ -1,12 +1,24 @@
+.con_magin{
+    max-width: 1500px;
+}
 @media (min-width: 760px) {
     .con_magin{
         margin: 0 205px 0 205px;
+        
     }
+    
 }
 .text_talleres{
     text-align: center;
     max-width: 400px;
     margin: 10px auto;
+    font-size: 14px;
+}
+@media (min-width: 760px) {
+    .text_talleres{
+        font-size: 20px;
+        max-width: 1200px;
+    }
 }
 .modulos{
     font-size: 14px;
@@ -34,8 +46,8 @@
     justify-content: center;
     text-align: center;
     color: white; /* Color del texto */
-    width: 130px;
-    height: 100px;
+    width: 62.18px;
+    height: 56px;
 }
 .modulo2{
     background-image: url('/img/adultos.svg'); /* Reemplaza 'tu_imagen.jpg' con la ruta de tu imagen */
@@ -46,8 +58,8 @@
     justify-content: center;
     text-align: center;
     color: white; /* Color del texto */
-    width: 130px;
-    height: 100px;
+    width: 62.18px;
+    height: 56px;
 }
 
 .descrption_talleres{
@@ -55,18 +67,21 @@
     justify-content: center;
     text-align: center;
     gap: 10px;
+    margin: 10px;
 }
 .descrption_taller{
     min-width: 160px;
     min-height: 160px;
-    padding: 5px;
+    text-align: left;
+    padding: 10px;
     background-color: #D9D9D9;
     border-radius: 8px;
+    font-size: 12px;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 900px) {
     .descrption_taller{
-        min-width: 507px;
+        min-width: 400px;
         min-height: 271px;
         border-radius: 0px;
     }
@@ -74,20 +89,36 @@
 .con_talleres_img{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    text-align: center;
     gap: 5px;
 }
+.texttalleres{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 .talleres_img{
-    min-width: 160px;
-    min-height: 160px;
-    padding: 5px;
-    background-color: #D9D9D9;
-    border-radius: 8px;
+    width: 163.14px;
+    height: 160px;
 }
 @media (min-width: 760px) {
     .con_talleres_img{
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1440px;
+        margin: 0 auto;
         gap: 5px;
+        justify-content: center;
+    }
+    .talleres_img{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media (min-width: 1200px) {
+    .con_talleres_img{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .talleres_img{
+        width: 298px;
+        height: 220px;
+        border-radius: 8px;
     }
 }
