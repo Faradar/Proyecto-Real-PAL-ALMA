@@ -1,5 +1,6 @@
 import Banner from '@/components/contact/Banner'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import fotoJuntas from '../../../public/nosotras/foto-juntas.jpg'
 import miceAzul2 from '../../../public/nosotras/miceAzul2.svg'
@@ -44,6 +45,7 @@ function page() {
       <Image src={azulBorde2} width={230} className="flex absolute  top-72 right-4"/>
       <Image src={miceAzul2} width={250} className="flex relative top-72 z-[-10] right-0"/>
       </div>
+      <Link href="/nosotras/masInfo" className='w-1/2 text-center flex justify-center mx-auto uppercase m-10 py-4 bg-orange-600 rounded-xl text-white hover:bg-orange-700'>Más sobre nosotras</Link>
     </main>
 
   )
