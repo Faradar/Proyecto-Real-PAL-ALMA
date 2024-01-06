@@ -48,7 +48,7 @@ function page() {
             ubicación del taller
           </h3>
           <ul>
-            <li className="py-2 lg:text-lg">Dirección: <a href="" target="blank">Duarte Quirós 5223 - B° Lomas del Suquia - Casa interna 226</a></li>
+            <li className="py-2 lg:text-lg">Dirección: <a href="">Duarte Quirós 5223 - B° Lomas del Suquia - Casa interna 226</a></li>
             <li className="py-2 lg:text-lg">Localidad: Cordoba capital - CP 5003</li>
           </ul>
         </div>
