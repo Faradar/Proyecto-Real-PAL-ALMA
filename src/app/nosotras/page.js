@@ -2,7 +2,7 @@ import Banner from '@/components/contact/Banner'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import fotoJuntas from '../../../public/nosotras/foto-juntas.jpg'
+import fotoJuntas from '../../../public/nosotras/fotoJuntas.jpg'
 import miceAzul2 from '../../../public/nosotras/miceAzul2.svg'
 import miceMarron from '../../../public/nosotras/miceMarron.svg'
 import azulBorde2 from '../../../public/nosotras/azulBorde2.svg'
@@ -16,25 +16,20 @@ function page() {
         <h2 className='text-3xl font-bold uppercase mb-4'>Nuestra misión</h2>
         <p className='text-xl font-bold w-8/12 mx-auto'>Ofrecer productos que reflejen la belleza natural de nuestro país y al mismo tiempo concientizar sobre la importancia crucial del cuidado del medio ambiente y la economía circular.</p>
       </section>
-      <section className='flex flex-col text-center my-10 text-lg w-11/12 mx-auto'>
+      <section className='flex flex-col text-center my-10 text-lg md:text-xl w-10/12 mx-auto'>
         <div>
           <h2 className='text-3xl font-bold uppercase mb-4'>¿Quiénes somos?</h2>
-          <p className='w-10/12 mx-auto'>Pa'l Alma es un emprendimiento de Córdoba Capital, creado por sus dueñas y socias Patricia y Maria, ambas dibujantes y artistas de vocación. El mismo, se basa en dibujos de la flora y fauna autóctona de Argentina, que posteriormente se plasman en diferentes productos (cuadernos, bitácoras, botellas, tazas, llaveros, etc).<br />La impronta de Pa'l Alma es que mientras realizan estos productos autóctonos, también buscan generar conocimientos  sobre los mismos y concientizar sobre el cuidado ambiental. Acompañados por la  realización de taller de arte se trabajan  sobre diferentes temas que atraviesan la  cuestión de la naturaleza y su cuidado.</p>
-        </div>
-        <div className='my-16 md:grid grid-cols-2 w-10/12 mx-auto'>
-          <div>
-            <Image />
-            <h3 className='text-2xl'>Maria</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, esse. Pariatur, quos tempora quod ex harum reprehenderit repellendus minus velit.</p>
-          </div>
-          <div>
-            <Image />
-            <h3 className='text-2xl'>Patricia</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, esse. Pariatur, quos tempora quod ex harum reprehenderit repellendus minus velit.</p>
-          </div>
-        </div>
-        <p className='w-10/12 mx-auto'>Nos conocimos en el colegio de nuestros hijos y compartiendo encuentros se fue consolidando una amistad y proyectos en común. Decidimos emprender juntas desde el 2021, para dar forma a este proyecto conjugando nuestra formación en Artes Plásticas, Diseño Industrial y Arquitectura.<br />Ambas con una mirada sensible ante el bienestar personal, la búsqueda y expresión de las emociones a través del ARTE y el cuidado del medio ambiente.</p>
+          <p className='w-10/12 my-6 mx-auto'>PA'L ALMA es una marca que nació del sueño de dos mamás profesionales tratando de conjugar la vida familiar con su trabajo, su pasión por las <b>ARTES PLÁSTICAS, el DIBUJO, la NATURALEZA, las EXPERIENCIAS al AIRE LIBRE y VIAJAR</b>.</p>
+          <p className='w-10/12 my-6 mx-auto'>Somos Patricia y María, nos conocimos en el colegio de nuestros hijos y compartiendo encuentros se fue consolidando una amistad y proyectos en común. Decidimos emprender juntas desde el 2021, para dar forma a este proyecto conjugando nuestra formación en Artes Plásticas, Diseño Industrial y Arquitectura.</p>
+          <p className='w-10/12 my-6 mx-auto'>Ambas con una mirada sensible ante el bienestar personal, la búsqueda y expresión de las emociones a través del ARTE y el cuidado del medio ambiente.</p>
+          <p className='w-10/12 my-6 mx-auto'>El nombre PA'L ALMA surgió de la búsqueda por encontrar una expresión autóctona que pudiera reflejar nuestro sentir con este proyecto y además tuviera las iniciales de nuestros nombres, Patricia y María.</p>
+          <p className='w-10/12 my-6 mx-auto'>Nuestra idea original era poder mostrar a través de nuestros dibujos, hechos a mano alzada, la flora y fauna de cada región de Argentina. Poder transmitir con nuestra riqueza natural, conocimientos y curiosidades sobre cada especie y además fomentar el cuidado de la naturaleza y biodiversidad.</p>
+          <p className='w-10/12 my-6 mx-auto'>Nos dimos cuenta que con esta idea podríamos generar productos que evocaran un recuerdo o un momento especial vivido durante un viaje por Argentina. Que fueran prácticos y funcionales a la vez pero con impronta de diseño y estilo autóctono. Tenemos como objetivo incorporar el concepto de la economía circular reciclando materiales principalmente del área textil.</p>
+          <p className='w-10/12 my-6 mx-auto'>Sabemos que desde el arte se puede lograr un bienestar y fomentar la expresión y la creatividad. Esta es la razón por la que decidimos llegar a niños y adultos a través de talleres de arte. Siguiendo con el concepto del reciclado y promoviendo las actividades artísticas con materiales cotidianos.</p>
+          <p className='w-10/12 my-6 mx-auto'>En este camino por llevar a cabo nuestro sueño, vamos dando pasos y aprendiendo en el proceso.</p>
+          <p className='w-10/12 my-6 mx-auto'>Esperamos ver crecer a PA'L ALMA como nuestro hijo de corazón, fuerte, emprendiendo un vuelo alto y dejando su huella.</p>
         <p className='w-10/12 mx-auto'>El nombre <span className='font-bold'>PA'L ALMA</span> surgió de la búsqueda por encontrar una expresión autóctona que pudiera reflejar nuestro sentir con este proyecto y además tuviera las iniciales de nuestros nombres, Patricia y María.</p>
+        </div>
         <Image className='mx-auto mt-16 mb-10 md:w-1/2' src={fotoJuntas} width={400} />
       </section>
       <div className="hidden lg:flex absolute top-3/4 z-[-10]">
