@@ -1,9 +1,19 @@
 "use client";
-import { useState } from "react";
-import Link from "next/link";
+import React from "react";
+// import Link from "next/link";
 import Image from "next/image";
+import Carousel from "@/components/carousel/Carousel";
 
 export default function Home() {
+  const carouselImages = [
+    "/inicio/1.svg",
+    "/inicio/2.svg",
+    "/inicio/3.svg",
+    "/inicio/4.svg",
+    "/inicio/5.svg",
+    "/inicio/6.svg",
+  ];
+
   return (
     <main>
       <div>
@@ -15,14 +25,14 @@ export default function Home() {
                 width={80}
                 height={118}
                 alt="Logo Pa'l Alma"
-                className="z-10 fixed w-[18vw] max-w-[75px]"
+                className="z-10 absolute w-[18vw] max-w-[75px]"
               />
               <Image
                 src="/inicio/misc-outline-left-mobile.svg"
                 width={90}
                 height={131}
                 alt="Logo Pa'l Alma"
-                className="z-0 fixed w-[20vw] max-w-[82px]"
+                className="z-0 absolute w-[20vw] max-w-[82px]"
               />
             </div>
             <div className="flex flex-col items-center text-center">
@@ -58,7 +68,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div></div>
+        <div className="flex items-center justify-center">
+          <Carousel images={carouselImages} />
+        </div>
         <div></div>
         <div></div>
       </div>
