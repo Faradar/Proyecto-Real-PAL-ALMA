@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white h-36 flex items-center justify-between pl-4 pr-8 md:bg-[#F0EDED] md:h-[100px] md:justify-around md:px-0">
+    <nav className="bg-white h-36 flex items-center justify-between pl-4 pr-8 md:h-[100px] md:justify-around md:shadow-[0_6px_6px_-1px_rgba(0,0,0,0.3)] md:px-0">
       {/* Logo */}
       <div>
         <Link href="/">
@@ -25,8 +25,8 @@ const Navbar = () => {
           </div>
         </Link>
       </div>
-      <div className="hidden md:flex justify-between items-center w-[520px] font-semibold text-sm text-white">
-        <div className="relative w-[100px] h-[75px]">
+      <div className="hidden md:flex justify-between items-center w-[640px] font-semibold text-sm text-white">
+        <div className="relative w-[113px] h-[92px]">
           <div className="z-10 w-full h-full absolute ">
             <Link
               href="/"
@@ -37,13 +37,13 @@ const Navbar = () => {
           </div>
           <Image
             src="/navbar/inicio.svg"
-            width={100}
-            height={75}
+            width={113}
+            height={92}
             alt="Forma aleatoria"
-            className="z-0 absolute top-[5px] left-[2px]"
+            className="z-0 absolute"
           />
         </div>
-        <div className="relative w-[100px] h-[75px]">
+        <div className="relative w-[119px] h-[92px]">
           <div className="z-10 w-full h-full absolute ">
             <Link
               href="/productos"
@@ -54,13 +54,13 @@ const Navbar = () => {
           </div>
           <Image
             src="/navbar/productos.svg"
-            width={100}
-            height={75}
+            width={119}
+            height={92}
             alt="Forma aleatoria"
-            className="z-0 absolute bottom-[5px] right-[1px]"
+            className="z-0 absolute"
           />
         </div>
-        <div className="relative w-[100px] h-[75px]">
+        <div className="relative w-[125px] h-[88px]">
           <div className="z-10 w-full h-full absolute ">
             <Link
               href="/talleres"
@@ -71,13 +71,13 @@ const Navbar = () => {
           </div>
           <Image
             src="/navbar/talleres.svg"
-            width={100}
-            height={75}
+            width={125}
+            height={88}
             alt="Forma aleatoria"
-            className="z-0 absolute top-[5px] left-[2px]"
+            className="z-0 absolute"
           />
         </div>
-        <div className="relative w-[100px] h-[75px]">
+        <div className="relative w-[114px] h-[92px]">
           <div className="z-10 w-full h-full absolute ">
             <Link
               href="/nosotras"
@@ -88,13 +88,13 @@ const Navbar = () => {
           </div>
           <Image
             src="/navbar/nosotras.svg"
-            width={100}
-            height={75}
+            width={114}
+            height={92}
             alt="Forma aleatoria"
-            className="z-0 absolute bottom-[5px] right-[1px]"
+            className="z-0 absolute"
           />
         </div>
-        <div className="relative w-[100px] h-[75px]">
+        <div className="relative w-[113px] h-[88px]">
           <div className="z-10 w-full h-full absolute ">
             <Link
               href="/contacto"
@@ -105,15 +105,15 @@ const Navbar = () => {
           </div>
           <Image
             src="/navbar/contacto.svg"
-            width={100}
-            height={75}
+            width={113}
+            height={88}
             alt="Forma aleatoria"
-            className="z-0 absolute top-[5px] left-[2px]"
+            className="z-0 absolute"
           />
         </div>
       </div>
       {/* Links */}
-      <div className="flex justify-between w-[30vw] max-w-[200px] md:w-auto">
+      <div className="flex justify-between w-[30vw] max-w-[150px] md:w-auto">
         {/* Hamburg menu */}
         <button
           className="md:hidden focus:outline-none relative"
@@ -140,7 +140,7 @@ const Navbar = () => {
           </div>
         </button>
         {/* Whatsapp */}
-        <div>
+        <div className="p-2">
           <Link href="/">
             <Image
               src="/navbar/whatsapp.svg"
