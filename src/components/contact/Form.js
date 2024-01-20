@@ -89,7 +89,7 @@ function Form() {
   return (
     <section className="w-10/12 md:w-8/12 mx-auto mt-10">
       {successMsg ? (
-        <p className="text-center text-base font-titleFont p-20 text-designColor">
+        <p className="text-center text-xl font-bold p-20">
           {successMsg}
         </p>
       ) : (

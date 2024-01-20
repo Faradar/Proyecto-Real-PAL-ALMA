@@ -2,8 +2,21 @@
 import React from "react";
 // import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import Carousel from "@/components/carousel/Carousel";
 import logo from "../../public/contacto/logo.svg"
+import HomeCard from "@/components/home/HomeCard";
+import taza from '../../public/inicio/tazaDienteDeLeon.jpg'
+import llavero from '../../public/inicio/llaveroLechuza.jpg'
+import calcomanias from '../../public/inicio/Calcomanias.jpg'
+import botella from '../../public/inicio/botellaMariposa.jpg'
+import talleres1 from '../../public/inicio/talleres1.jpg'
+import talleres2 from '../../public/inicio/talleres2.jpg'
+import talleres3 from '../../public/inicio/talleres3.jpg'
+import talleres4 from '../../public/inicio/talleres4.jpg'
+import miceMarron from '../../public/inicio/miceMarronHome.svg'
+import marronBorde from '../../public/inicio/marronBordeHome.svg'
+
 
 
 export default function Home() {
@@ -14,6 +27,7 @@ export default function Home() {
     "/inicio/4.svg",
     "/inicio/5.svg",
     "/inicio/6.svg",
+    
   ];
 
   return (
@@ -40,8 +54,24 @@ export default function Home() {
       <div className="flex items-center justify-center overflow-hidden">
         <Carousel images={carouselImages} />
       </div>
-      <div></div>
-      <div></div>
+      <div className="hidden lg:flex absolute right-0 top-full z-[-10]">
+          <Image src={marronBorde} width={450} className="flex absolute  top-24 right-4" />
+          <Image src={miceMarron} width={450} className="flex relative top-24 z-[-10] right-0" />
+        </div>
+      <section className="w-11/12 mx-auto mb-10">
+        <h2 className="font-bold text-left pl-8 text-xl lg:text-3xl">ALGUNOS DE NUESTROS PRODUCTOS:</h2>
+        <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+          <Link href="/productos"><HomeCard src={llavero} title={'Llavero rectangular Lechuza vizcachera'}/></Link>
+          <Link href="/productos"><HomeCard src={taza} title={'Taza cerámica, diseño con Dientes de León'}/></Link>
+          <Link href="/productos"><HomeCard src={calcomanias} title={'Calcamonías Flora autóctona'}/></Link>
+          <Link href="/productos"><HomeCard src={botella} title={'Botella con diseño de Mariposa'}/></Link>
+          
+          <Link href="/talleres"><HomeCard src={talleres1} title={'Enseñar que se puede hacer arte con lo cotidiano, con lo que tenemos a nuestro alrededor.'}/></Link>
+          <Link href="/talleres"><HomeCard src={talleres2} title={'Espacio para conectarte con tu interior y donde se tenga la posibilidad de expresar las emociones a través del arte.'}/></Link>
+          <Link href="/talleres"><HomeCard src={talleres3} title={'Introducir el concepto de reutilización y reciclado a través del ARTE.'}/></Link>
+          <Link href="/talleres"><HomeCard src={talleres4} title={'Talleres de arte para niños y adultos, utilizando materiales cotidianos y promoviendo.'}/></Link>
+        </div>
+      </section>
     </main>
   );
 }
