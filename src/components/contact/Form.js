@@ -95,7 +95,7 @@ function Form() {
       ) : (
         <form
           id="form"
-          action="https://getform.io/f/58ffa1a4-f93e-4bc9-ac6c-21e70903a041"
+          action="https://getform.io/f/eb362684-70c2-4f34-b6db-e4f597d27256"
           method="POST"
           className="p-6 grid grid-col gap-6 lg:grid-cols-2"
         >
