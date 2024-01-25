@@ -1,8 +1,10 @@
 import { Quicksand } from "next/font/google";
-import "./styleF.css";
+import "./global.css";
 
 // Components
-import Footer from "../components/footer/Footer";
+import Navbar from "../components/navbar/Navbar";
+
+const quicksand = Quicksand({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Pa'l Alma",
@@ -12,10 +14,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body >
-        <Footer />
+      <body className={quicksand.className}>
+        <Navbar />
         {children}
       </body>
+      <footer className={inter.className}>{children}</footer>
     </html>
   );
 }
