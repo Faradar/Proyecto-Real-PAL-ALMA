@@ -11,7 +11,7 @@ function page() {
   return (
     <main className="w-full">
       <Banner />
-      <p className="flex justify-center text-lg lg:text-2xl my-4">
+      <p className="flex justify-center text-lg lg:text-2xl my-4 font-bold">
         Pa'l alma tiene su casa en Córdoba Capital, Argentina
       </p>
       <div className="w-full hidden lg:flex absolute">
@@ -38,12 +38,12 @@ function page() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
 
-        <div className="mx-auto md:pl-4 my-4 lg:my-0 lg:mr-4 flex flex-col text-center lg:text-left">
+        <div className="mx-auto md:pl-4 my-4 lg:my-0 lg:mr-4 flex flex-col text-left lg:text-left">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold uppercase mb-4 tracking-widest">
             contactanos
           </h2>
           <ul className="text-lg">
-            <li className="pt-6 pb-2">WhatsApp: +5493513955439 (Pato) | +5493513870553 (María) </li>
+            <li className="pt-6 pb-2">WhatsApp: <br/> +5493513955439 (Pato) | +5493513870553 (María) </li>
             <li className="py-2">
               Facebook:{" "}
               <a href="https://www.facebook.com/profile.php?id=100085206638363" target="blank">
@@ -63,8 +63,8 @@ function page() {
               </a>
             </li>
           </ul>
-          <h3 className="text-2xl md:text-3xl lg:text-4xl uppercase mt-6 lg:mt-10 mb-2 lg:mb-6 tracking-widest">
-            ubicación del taller
+          <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold uppercase mt-6 lg:mt-10 mb-2 lg:mb-6 tracking-widest">
+            taller pa'l alma
           </h3>
           <ul>
             <li className="py-2 lg:text-lg">Dirección: <a href="">Duarte Quirós 5223 - B° Lomas del Suquia - Casa interna 226</a></li>
