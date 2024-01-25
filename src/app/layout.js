@@ -3,6 +3,7 @@ import "./global.css";
 
 // Components
 import Navbar from "../components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
 const quicksand = Quicksand({ subsets: ["latin"] });
 
@@ -17,8 +18,8 @@ export default function RootLayout({ children }) {
       <body className={quicksand.className}>
         <Navbar />
         {children}
+        <Footer />
       </body>
-      <footer className={inter.className}>{children}</footer>
     </html>
   );
 }
