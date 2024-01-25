@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
       </body>
-      <footer className={inter.className}>{children}</footer>
+      <footer className={quicksand.className}>{children}</footer>
     </html>
   );
 }
