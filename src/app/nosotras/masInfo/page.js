@@ -15,10 +15,10 @@ function page() {
 
   return (
     <>
-      <Banner />
+      <Banner/>
       <main className='w-10/12 mx-auto my-4 overflow-x-hidden  bg-slate-50/30'>
         <div className='grid grid-rows-3 lg:grid-cols-2 lg:grid-rows-1 gap-10'>
-          <Image src={mari} className='w-11/12 md:w-8/12 flex justify-self-center m-auto' />
+          <Image src={mari} className='w-44 md:w-8/12 flex justify-self-center m-auto' />
           <div className='flex flex-col row-span-2 justify-center'>
             <ReadMore 
             text={`Mi nombre es María de los Ángeles Carranza, nací en el interior de Córdoba en una ciudad que se llama Cruz del Eje, ciudad a la que llegaron mis padres como grandes emprendedores por lo que mamé desde niña el esfuerzo y la gratificación de trabajar por cuenta propia. Desde que recuerdo me gusta dibujar. A los 9 años empecé a asistir a la escuela de bellas artes, mi vida transcurría en el taller infantil, luego taller infanto juvenil y magisterio, mis dibujos preferidos siempre eran los árboles, ese camino finalizó a los 17 cuando egresé como maestra de Artes Plásticas`} 
@@ -27,7 +27,7 @@ function page() {
         </div>
 
         <div className='grid grid-rows-3 lg:grid-cols-2 lg:grid-rows-1'>
-          <Image className='lg:order-last w-11/12 md:w-8/12 flex justify-self-center m-auto' src={pato} />
+          <Image className='lg:order-last w-44 md:w-8/12 flex justify-self-center m-auto' src={pato} />
           <div className='flex flex-col my-4 row-span-2 justify-center'>
             <ReadMore text={`Soy Patricia Ariadna Furbatto, nací en Córdoba Capital y viví a lo largo de mi infancia en distintas provincias de Argentina. Hija de madre patagónica con alma viajera, incorporé desde pequeña la vida nómade, los cambios constantes, las aventuras al aire libre y el amor por la naturaleza.
             Cada recuerdo que tengo de mi infancia, veo a la niña que siempre disfrutó expresarse a través del dibujo de una manera innata. Esos momentos en los que me encontraba con los lápices de colores y mis cuadernos era como introducirme en un mundo mágico para dejar volar la imaginación y donde cualquier cosa sería posible.Mis primeros pasos en este mundo fueron guiados por mi mamá, también artista aficionada. Muchos de los aprendizajes durante mi niñez y adolescencia fueron más como autodidacta.`}
