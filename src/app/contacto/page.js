@@ -4,6 +4,8 @@ import miceVerde from "../../../public/contacto/micelaniaVerde.svg";
 import miceAzul from "../../../public/contacto/micelaniaAzul.svg";
 import azulBorde from "../../../public/contacto/azulBorde.svg";
 import verdeBorde from "../../../public/contacto/verdeBorde.svg";
+import miceNaranja from "../../../public/contacto/miceNaranja.svg";
+import naranjaBorde from "../../../public/contacto/naranjaBorde2.svg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,16 +16,32 @@ function page() {
       <p className="flex justify-center text-lg lg:text-2xl my-4 font-bold">
         Pa'l alma tiene su casa en Córdoba Capital, Argentina
       </p>
-      <div className="w-full hidden lg:flex absolute">
+      <div className="w-full hidden lg:flex absolute -z-10">
         <Image
           src={verdeBorde}
           width={300}
           className="flex absolute top-20 right-0"
+          alt="borde de micelania verde"
         />
         <Image
           src={miceVerde}
           width={230}
           className="flex absolute top-48 right-0"
+          alt="micelania verde"
+        />
+      </div>
+      <div className="w-full md:hidden absolute -z-10">
+        <Image
+          src={miceVerde}
+          width={100}
+          className="flex absolute top-48 right-0"
+          alt="micelania verde mobile"
+        />
+        <Image
+          src={verdeBorde}
+          width={130}
+          className="flex absolute top-36 right-0"
+          alt=" borde de micelania verde mobile"
         />
       </div>
       <section className="w-10/12 lg:w-9/12 flex flex-col md:flex-row mx-auto my-10">
@@ -87,11 +105,19 @@ function page() {
         <p>¡Gracias por conectarte con nosotros!</p>
       </section>
       <div className="hidden lg:flex absolute">
-        <Image src={azulBorde} width={340} className="flex  relative left-0" />
+        <Image src={azulBorde} width={340} className="flex  relative left-0" alt="borde de micelania azul"/>
         <Image
           src={miceAzul}
           width={150}
           className="flex absolute top-28 left-0"
+          alt="micelania azul"
+        />
+
+      </div>
+      <div className="md:hidden absolute z-[-10]">
+        <Image src={miceNaranja} width={160} className="flex top-3 relative left-0" alt="micelania naranja"/>
+        <Image
+          src={naranjaBorde} width={140} className="flex absolute top-[-13px] left-1" alt=" borde de micelania azul"
         />
 
       </div>

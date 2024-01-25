@@ -24,15 +24,15 @@ function page() {
           <p className='w-10/12 my-6 mx-auto'>Ambas con una mirada sensible ante el bienestar personal, la búsqueda y expresión de las emociones a través del ARTE y el cuidado del medio ambiente.</p>
         <p className='w-10/12 mx-auto'>El nombre PA'L ALMA surgió de la búsqueda por encontrar una expresión autóctona que pudiera reflejar nuestro sentir con este proyecto y además tuviera las iniciales de nuestros nombres, Patricia y María.</p>
         </div>
-        <Image className='mx-auto hidden md:flex mt-16 mb-10 md:w-1/2' src={fotoJuntas} width={400} />
+        <Image className='mx-auto hidden md:flex mt-16 mb-10 md:w-1/2' src={fotoJuntas} width={400} alt='foto de patricia y maria'/>
       </section>
       <div className="hidden lg:flex absolute top-3/4 z-[-10]">
-        <Image src={marronBorde} width={300} className="flex relative bottom-2/3 left-0" />
-        <Image src={miceMarron} width={200} className="flex absolute top-2 left-0" />
+        <Image src={marronBorde} width={300} className="flex relative bottom-2/3 left-0" alt='borde de micelania marron' />
+        <Image src={miceMarron} width={200} className="flex absolute top-2 left-0" alt='micelania marron'/>
       </div>
       <div className="hidden lg:flex absolute right-0 top-full z-[-10]">
-      <Image src={azulBorde2} width={230} className="flex absolute  top-72 right-4"/>
-      <Image src={miceAzul2} width={250} className="flex relative top-72 z-[-10] right-0"/>
+      <Image src={azulBorde2} width={230} className="flex absolute  top-72 right-4" alt='borde de micelania azul 2'/>
+      <Image src={miceAzul2} width={250} className="flex relative top-72 z-[-10] right-0" alt='micelania azul 2'/>
       </div>
       <Link href="/nosotras/masInfo" className='w-1/2 text-center flex justify-center mx-auto uppercase m-10 py-4 bg-orange-600 rounded-xl text-white hover:bg-orange-700'>Más sobre nosotras</Link>
     </main>
