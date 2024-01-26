@@ -65,7 +65,7 @@ export default function productos() {
                 </div>
             </div>
             <div className="grid grid-cols-2 point">
-                <div className="w-1223px text-center font-bold text-sm m-5 bg-#F2F6F8  items-center justify-center m-5 point-text">
+                <div className="w-1223px text-center font-bold text-sm m-5 bg-#F2F6F8  items-center justify-center point-text">
                     <h2>¿Cómo comprar nuestros productos vía WhatsApp?</h2>
                     <p className="m-5 font-quicksand text-left w-600">
                         1. Explora nuestra variedad de productos y elige el que más te guste. <br/>
