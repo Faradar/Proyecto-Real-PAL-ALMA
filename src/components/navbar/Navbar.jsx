@@ -121,8 +121,8 @@ const Navbar = () => {
         >
           <Image
             src="/navbar/hamburgMenu.svg"
-            width={40}
-            height={28}
+            width={100}
+            height={40}
             alt="Menu Hamburguesa"
           />
 
@@ -146,8 +146,8 @@ const Navbar = () => {
           <Link href="https://wa.me/+5493513955439?text=Buenas!+Me+contacto+desde+la+página+web">
             <Image
               src="/navbar/whatsapp.svg"
-              width={28}
-              height={28}
+              width={50}
+              height={50}
               alt="Logo Whatsapp"
               className="md:w-12"
             />
