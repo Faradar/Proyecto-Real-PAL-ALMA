@@ -18,7 +18,7 @@ function page() {
       <Banner/>
       <main className='w-10/12 mx-auto my-4 overflow-x-hidden  bg-slate-50/30'>
         <div className='grid grid-rows-3 lg:grid-cols-2 lg:grid-rows-1 gap-10'>
-          <Image src={mari} className='w-44 md:w-8/12 flex justify-self-center m-auto' />
+          <Image src={mari} className='w-44 md:w-8/12 flex justify-self-center m-auto' alt='foto de maria' />
           <div className='flex flex-col row-span-2 justify-center'>
             <ReadMore 
             text={`Mi nombre es María de los Ángeles Carranza, nací en el interior de Córdoba en una ciudad que se llama Cruz del Eje, ciudad a la que llegaron mis padres como grandes emprendedores por lo que mamé desde niña el esfuerzo y la gratificación de trabajar por cuenta propia. Desde que recuerdo me gusta dibujar. A los 9 años empecé a asistir a la escuela de bellas artes, mi vida transcurría en el taller infantil, luego taller infanto juvenil y magisterio, mis dibujos preferidos siempre eran los árboles, ese camino finalizó a los 17 cuando egresé como maestra de Artes Plásticas`} 
@@ -27,7 +27,7 @@ function page() {
         </div>
 
         <div className='grid grid-rows-3 lg:grid-cols-2 lg:grid-rows-1'>
-          <Image className='lg:order-last w-44 md:w-8/12 flex justify-self-center m-auto' src={pato} />
+          <Image className='lg:order-last w-44 md:w-8/12 flex justify-self-center m-auto' src={pato} alt='foto de patricia'/>
           <div className='flex flex-col my-4 row-span-2 justify-center'>
             <ReadMore text={`Soy Patricia Ariadna Furbatto, nací en Córdoba Capital y viví a lo largo de mi infancia en distintas provincias de Argentina. Hija de madre patagónica con alma viajera, incorporé desde pequeña la vida nómade, los cambios constantes, las aventuras al aire libre y el amor por la naturaleza.
             Cada recuerdo que tengo de mi infancia, veo a la niña que siempre disfrutó expresarse a través del dibujo de una manera innata. Esos momentos en los que me encontraba con los lápices de colores y mis cuadernos era como introducirme en un mundo mágico para dejar volar la imaginación y donde cualquier cosa sería posible.Mis primeros pasos en este mundo fueron guiados por mi mamá, también artista aficionada. Muchos de los aprendizajes durante mi niñez y adolescencia fueron más como autodidacta.`}
@@ -35,12 +35,12 @@ function page() {
           </div>
         </div>
         <div className="hidden lg:flex absolute right-0 top-full z-[-10]">
-          <Image src={azulBorde2} width={200} className="flex absolute  bottom-72 right-4" />
-          <Image src={miceAzul2} width={220} className="flex relative bottom-72 z-[-10] right-0" />
+          <Image src={azulBorde2} width={200} className="flex absolute  bottom-72 right-4" alt='borde de micelania azul 2' />
+          <Image src={miceAzul2} width={220} className="flex relative bottom-72 z-[-10] right-0" alt='micelania azul 2' />
         </div>
         <div className="hidden lg:flex absolute left-0 top-full z-[-10]">
-          <Image src={verdeBorde2} width={430} className="flex relative  top-[500px] left-24" />
-          <Image src={miceVerde2} width={400} className="flex absolute top-[500px] z-[-10] left-28" />
+          <Image src={verdeBorde2} width={430} className="flex relative  top-[500px] left-24" alt='borde de micelania verde 2'/>
+          <Image src={miceVerde2} width={400} className="flex absolute top-[500px] z-[-10] left-28" alt='micelania verde' />
         </div>
       </main>
     </>
