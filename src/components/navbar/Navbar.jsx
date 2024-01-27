@@ -11,9 +11,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white h-36 flex items-center justify-between pl-4 pr-8 md:h-[100px] md:justify-around md:px-0">
+    <nav className="bg-slate-700/10 md:bg-white h-36 flex items-center justify-between pl-4 pr-8 md:h-[100px] md:justify-around md:shadow-[0_6px_6px_-1px_rgba(0,0,0,0.3)] md:px-0">
       {/* Logo */}
-      <div>
+      <div className="order-1 md:order-first ml-6 lg:max-w-[150px]">
         <Link href="/">
           <div>
             <Image
@@ -25,8 +25,8 @@ const Navbar = () => {
           </div>
         </Link>
       </div>
-      <div className="hidden md:flex justify-between items-center w-[640px] font-semibold text-sm text-white">
-        <div className="relative w-[113px] h-[92px]">
+      <div className="hidden md:flex justify-between items-center w-[630px] mx-auto font-semibold text-sm text-white">
+        <div className="relative w-[110px] h-[92px]">
           <div className="z-10 w-full h-full absolute ">
             <Link
               href="/"
@@ -113,16 +113,16 @@ const Navbar = () => {
         </div>
       </div>
       {/* Links */}
-      <div className="flex justify-between w-[30vw] max-w-[150px] md:w-auto">
+      <div className="flex justify-between w-[30vw] max-w-[50px] md:w-auto">
         {/* Hamburg menu */}
         <button
-          className="md:hidden focus:outline-none relative"
+          className="md:hidden focus:outline-none relative z-50"
           onClick={toggleMenu}
         >
           <Image
             src="/navbar/hamburgMenu.svg"
-            width={40}
-            height={28}
+            width={100}
+            height={40}
             alt="Menu Hamburguesa"
           />
 
@@ -130,28 +130,29 @@ const Navbar = () => {
           <div
             className={`${
               isOpen ? "flex" : "hidden"
-            } mt-4 flex-col absolute right-[-52px] items-center justify-center bg-[#D9D9D9] w-36 h-36 font-semibold`}
+            } mt-4 flex-col absolute left-[-30px] items-center text-center justify-center backdrop-blur-md bg-zinc-200/10 w-44 h-56 font-semibold`}
+
           >
-            <Link href="/">Inicio</Link>
-            <Link href="/productos">Productos</Link>
-            <Link href="/talleres">Talleres</Link>
-            <Link href="/nosotras">Nosotras</Link>
-            <Link href="/contacto">Contacto</Link>
+            <Link href="/" className="py-2">Inicio</Link>
+            <Link href="/productos" className="py-2">Productos</Link>
+            <Link href="/talleres" className="py-2">Talleres</Link>
+            <Link href="/nosotras" className="py-2">Nosotras</Link>
+            <Link href="/contacto" className="py-2">Contacto</Link>
           </div>
         </button>
+      </div>
         {/* Whatsapp */}
-        <div className="p-2">
-          <Link href="/">
+        <div className="p-2 order-last mr-6">
+          <Link href="https://wa.me/+5493513955439?text=Buenas!+Me+contacto+desde+la+página+web">
             <Image
               src="/navbar/whatsapp.svg"
-              width={28}
-              height={28}
+              width={50}
+              height={50}
               alt="Logo Whatsapp"
               className="md:w-12"
             />
           </Link>
         </div>
-      </div>
     </nav>
   );
 };

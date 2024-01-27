@@ -89,13 +89,13 @@ function Form() {
   return (
     <section className="w-10/12 md:w-8/12 mx-auto mt-10">
       {successMsg ? (
-        <p className="text-center text-base font-titleFont p-20 text-designColor">
+        <p className="text-center text-xl font-bold p-20">
           {successMsg}
         </p>
       ) : (
         <form
           id="form"
-          action="https://getform.io/f/58ffa1a4-f93e-4bc9-ac6c-21e70903a041"
+          action="https://getform.io/f/eb362684-70c2-4f34-b6db-e4f597d27256"
           method="POST"
           className="p-6 grid grid-col gap-6 lg:grid-cols-2"
         >

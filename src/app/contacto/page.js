@@ -4,25 +4,44 @@ import miceVerde from "../../../public/contacto/micelaniaVerde.svg";
 import miceAzul from "../../../public/contacto/micelaniaAzul.svg";
 import azulBorde from "../../../public/contacto/azulBorde.svg";
 import verdeBorde from "../../../public/contacto/verdeBorde.svg";
+import miceNaranja from "../../../public/contacto/miceNaranja.svg";
+import naranjaBorde from "../../../public/contacto/naranjaBorde2.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 function page() {
   return (
     <main className="w-full">
       <Banner />
-      <p className="flex justify-center text-lg lg:text-2xl my-4">
+      <p className="flex justify-center text-lg lg:text-2xl my-4 font-bold">
         Pa'l alma tiene su casa en Córdoba Capital, Argentina
       </p>
-      <div className="w-full hidden lg:flex absolute">
+      <div className="w-full hidden lg:flex absolute -z-10">
         <Image
           src={verdeBorde}
           width={300}
           className="flex absolute top-20 right-0"
+          alt="borde de micelania verde"
         />
         <Image
           src={miceVerde}
           width={230}
           className="flex absolute top-48 right-0"
+          alt="micelania verde"
+        />
+      </div>
+      <div className="w-full md:hidden absolute -z-10">
+        <Image
+          src={miceVerde}
+          width={100}
+          className="flex absolute top-48 right-0"
+          alt="micelania verde mobile"
+        />
+        <Image
+          src={verdeBorde}
+          width={130}
+          className="flex absolute top-36 right-0"
+          alt=" borde de micelania verde mobile"
         />
       </div>
       <section className="w-10/12 lg:w-9/12 flex flex-col md:flex-row mx-auto my-10">
@@ -36,32 +55,40 @@ function page() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-        <div className="mx-auto md:pl-4 my-4 lg:my-0 lg:mr-4 flex flex-col text-center">
+
+        <div className="mx-auto md:pl-4 my-4 lg:my-0 lg:mr-4 flex flex-col text-left lg:text-left">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold uppercase mb-4 tracking-widest">
             contactanos
           </h2>
           <ul className="text-lg">
-            <li className="pt-6 pb-2">WhatsApp: 112233997766</li>
+            <li className="pt-6 pb-2">WhatsApp: <br/> +5493513955439 (Pato) | +5493513870553 (María) </li>
             <li className="py-2">
               Facebook:{" "}
-              <a href="" target="blank">
+              <a href="https://www.facebook.com/profile.php?id=100085206638363" target="blank">
                 pa'l alma dibujos
               </a>
             </li>
             <li className="py-2">
               Instagram:{" "}
-              <a href="" target="blank">
-                pa.l.alma.dibujos
+              <a href="https://www.instagram.com/palalma.dibujos?igsh=c2xiyjlmagh4nwdv" target="blank">
+                palalma.dibujos
               </a>
             </li>
             <li className="py-2">
               Email:{" "}
-              <a href="" target="blank">
-                pal.l.alma.dibujos@gmail.com
+              <a href="mailto:palalma.argentina@gmail.com" target="blank">
+                palalma.argentina@gmail.com
               </a>
             </li>
-            <li className="py-2">Ubicación: Córdoba Capital</li>
           </ul>
+          <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold uppercase mt-6 lg:mt-10 mb-2 lg:mb-6 tracking-widest">
+            taller pa'l alma
+          </h3>
+          <ul>
+            <li className="py-2 lg:text-lg">Dirección: <a href="">Duarte Quirós 5223 - B° Lomas del Suquia - Casa interna 226</a></li>
+            <li className="py-2 lg:text-lg">Localidad: Cordoba capital - CP 5003</li>
+          </ul>
+          <Link href="https://www.google.com/maps/place/Duarte+Quir%C3%B3s+5223,+C%C3%B3rdoba/@-31.3975708,-64.2500876,18.45z/data=!4m5!3m4!1s0x94329f31a7ca4715:0x291541482743d8d3!8m2!3d-31.397304!4d-64.2502643?entry=ttu" target="blank" className="flex md:hidden bg-orange-500 w-32 mx-auto p-2 rounded-lg text-white justify-center text-xl font-bold">Ver Mapa</Link>
         </div>
       </section>
       <section className="w-9/12 mx-auto flex flex-col text-center">
@@ -78,12 +105,21 @@ function page() {
         <p>¡Gracias por conectarte con nosotros!</p>
       </section>
       <div className="hidden lg:flex absolute">
-        <Image src={azulBorde} width={340} className="flex  relative left-0" />
+        <Image src={azulBorde} width={340} className="flex  relative left-0" alt="borde de micelania azul"/>
         <Image
           src={miceAzul}
           width={150}
           className="flex absolute top-28 left-0"
+          alt="micelania azul"
         />
+
+      </div>
+      <div className="md:hidden absolute z-[-10]">
+        <Image src={miceNaranja} width={160} className="flex top-3 relative left-0" alt="micelania naranja"/>
+        <Image
+          src={naranjaBorde} width={140} className="flex absolute top-[-13px] left-1" alt=" borde de micelania azul"
+        />
+
       </div>
       <Form />
     </main>
