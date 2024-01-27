@@ -52,5 +52,7 @@ export default function Talleres() {
             </div>
         </div>
       </div>
+      
     );
   }
+  

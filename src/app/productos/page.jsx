@@ -4,7 +4,7 @@ import './productos.css'
 
 export default function productos() {
     return (
-      <div>
+    <div>
         <div class="relative z-[-99]">
                 <div class="absolute img1">
                     <img  src="/img/productos/first.svg" alt="Fondo1" />
@@ -27,47 +27,85 @@ export default function productos() {
                 <div class="absolute img-third">
                     <img  src="/img/productos/third.svg" alt="Fondo3" />
                 </div>   
-            </div>
-        <div >  
+        </div>
         <div class="relative z-[-99]">
-            <div class="absolute img-fourthFon">
+                <div class="absolute img-fourthFon">
                     <img  src="/img/productos/fourthFon.svg" alt="Fondocolor4" />
                 </div> 
                 <div class="absolute img-fourth">
                     <img  src="/img/productos/fourth.svg" alt="Fondo4" />
                 </div>   
             </div>
-        <div >
-            
-    </div> 
-
-            
-            <div className="primary">
-                <h1 className="text-lg font-bold ml-10 mt-20">Creación de productos con diseño autóctono, comprometiéndose con la sostenibilidad al reciclar materiales textiles
+        <div > 
+            <div className="">
+                <h1 className="text-center text-xl font-bold  mt-20">
+                    Creación de productos con diseño autóctono, comprometiéndose con la sostenibilidad al reciclar materiales textiles.
                 </h1>
                 
                 <div >
-                    <h2 className="text-lg pt-10 pl-10">Capturando la esencia única de la flora y fauna que nos rodea.</h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 bg-#EAF0F4 p-10 ">
-                        <div className="p-8 bg-cover bg-center h-64 rounded-md" style={{ backgroundImage: "url('/img/Captura de pantalla (1980) 1.png')" }}></div>
-                        <div className="p-8 bg-cover bg-center h-64 rounded-md" style={{ backgroundImage: "url('/img/Captura de pantalla (1980) 2.png')" }}></div>
-                        <div className="p-8 bg-cover bg-center h-64 rounded-md" style={{ backgroundImage: "url('/img/Captura de pantalla (1979) 1.png')" }}></div>
-                        <div className="p-8 bg-cover bg-center h-64 rounded-md" style={{ backgroundImage: "url('/img/Captura de pantalla (1979) 2.png')" }}></div>
-                        <div className="p-8 bg-cover bg-center h-64 rounded-md" style={{ backgroundImage: "url('/img/Captura de pantalla (1980) 1.png')" }}></div>
-                        <div className="p-8 bg-cover bg-center h-64 rounded-md" style={{ backgroundImage: "url('/img/Captura de pantalla (1980) 2.png')" }}></div>
-                        <div className="p-8 bg-cover bg-center h-64 rounded-md" style={{ backgroundImage: "url('/img/Captura de pantalla (1979) 1.png')" }}></div>
-                        <div className="p-8 bg-cover bg-center h-64 rounded-md" style={{ backgroundImage: "url('/img/Captura de pantalla (1979) 2.png')" }}></div>
-                        <div className="p-8 bg-cover bg-center h-64 rounded-md" style={{ backgroundImage: "url('/img/Captura de pantalla (1980) 1.png')" }}></div>
-                        <div className="p-8 bg-cover bg-center h-64 rounded-md" style={{ backgroundImage: "url('/img/Captura de pantalla (1980) 2.png')" }}></div>
-                        <div className="p-8 bg-cover bg-center h-64 rounded-md" style={{ backgroundImage: "url('/img/Captura de pantalla (1979) 1.png')" }}></div>
-                        <div className="p-8 bg-cover bg-center h-64 rounded-md" style={{ backgroundImage: "url('/img/Captura de pantalla (1979) 2.png')" }}></div>
+                    <h2 className="text-x pt-10 pl-10">
+                        Capturando la esencia única de la flora y fauna que nos rodea.
+                    </h2>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 bg-eaf0f4 p-4 md:p-10 ">
+                        <div className="flex items-center justify-center flex-col">
+                            <img src="/img/Taza Cerámica_Mariposa Borde de Oro 2.png" alt="Tasas Ceramica" />
+                            <span className="font-bold">Taza cerámica Mariposa borde de oro</span>
+                        </div>
+                        <div className="flex items-center justify-center flex-col">
+                            <img src="/img/Taza Cerámica_Diente de León (1) 1.png" alt="Tasas Ceramica 
+                            leon" />
+                            <span className="font-bold">Taza cerámica Diente de León</span>
+                        </div>
+                        <div className="flex items-center justify-center flex-col">
+                            <img src="/img/Matermo_Chica 1.png" alt="Tasas Ceramica 
+                            leon" />
+                            <span className="font-bold">Matermo Chilca</span>
+                        </div>
+                        <div className="flex items-center justify-center flex-col">
+                            <img src="/img/Botella_Lechuza Vizcachera 2.png" alt="Bitácora Zorro gris" />
+                            <span className="font-bold">Bitácora Zorro gris</span>
+                        </div>
+                        <div className="flex items-center justify-center flex-col">
+                            <img src="/img/Bitácora A5_Zorro Gris_1 1.png" alt="Bitácora Benteveo" />
+                            <span className="font-bold">Bitácora Zorro gris</span>
+                        </div>
+                        <div className="flex items-center justify-center flex-col">
+                            <img src="/img/Bitácora A5_Benteveo_1 2.png" alt="Calcomanía Flora autóctona" />
+                            <span className="font-bold">Bitácora Benteveo</span>
+                        </div>
+                        <div className="flex items-center justify-center flex-col">
+                            <img src="/img/Calcomanías_Flora Autóctona 3.png" alt="Botella Lechuza" />
+                            <span className="font-bold">Calcomanía Flora autóctona</span>
+                        </div>
+                        <div className="flex items-center justify-center flex-col">
+                            <img src="/img/Calcomanías_Fauna Autóctona 2.png" alt="Botella Lechuza" />
+                            <span className="font-bold">Calcomanía Fauna autóctona</span>
+                        </div>
+                        {/* -- */}
+                        <div className="flex items-center justify-center flex-col">
+                            <img src="/img/Llavero Circular_Zorro Gris 4.png" alt="Bitácora Benteveo" />
+                            <span className="font-bold">Llavero circular Zorro gris</span>
+                        </div>
+                        <div className="flex items-center justify-center flex-col">
+                            <img src="/img/Llavero Rectangular_Flor del Chañar 4.png" alt="Calcomanía Flora autóctona" />
+                            <span className="font-bold">Llavero rectangular Flor del Cañar</span>
+                        </div>
+                        <div className="flex items-center justify-center flex-col">
+                            <img src="/img/Bolso Lona_Lechuza Vizcachera 1.png" alt="Botella Lechuza" />
+                            <span className="font-bold">Bolso de lona Lechuza vizcachera</span>
+                        </div>
+                        <div className="flex items-center justify-center flex-col">
+                            <img src="/img/Bolso Lona_Vinca 1.png" alt="Botella Lechuza" />
+                            <span className="font-bold">Bolso de lona Vinca</span>
+                        </div>
                     </div>
                 </div>
             </div>
+            </div>
             <div className="grid grid-cols-2 point">
-                <div className="w-1223px text-center font-bold text-sm m-5 bg-#F2F6F8  items-center justify-center point-text">
+                <div className="w-1223px text-center font-bold text-sm bg-#F2F6F8  items-center justify-center m-5 point-text">
                     <h2>¿Cómo comprar nuestros productos vía WhatsApp?</h2>
-                    <p className="m-5 font-quicksand text-left w-600">
+                    <p className="max-w-600 m-5 font-quicksand text-left">
                         1. Explora nuestra variedad de productos y elige el que más te guste. <br/>
                         2. Envíanos un mensaje por WhatsApp con el nombre o una breve descripción del producto que deseas adquirir.<br/>
                         3. Te confirmaremos la disponibilidad del artículo y te proporcionaremos detalles sobre el proceso de reserva.<br/>
@@ -79,11 +117,10 @@ export default function productos() {
                     Estamos aquí para brindarte una buena experiencia de compra.
                     </p>
                 </div>
-                <div className="flex items-center ml-20">
+                <div className="flex items-center">
                     <img src="/img/Group.svg" alt="Grupo" className="text-center" />
                 </div>
             </div>
         </div>
-      </div>
     );
-  }
+}
