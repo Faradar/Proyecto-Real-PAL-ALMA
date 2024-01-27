@@ -101,7 +101,7 @@ function Form() {
         >
           <div className="w-full flex flex-col gap-4 justify-between">
             <div>
-              <label htmlFor="clientName" className="ml-2 text-lg">Nombre</label>
+              <label htmlFor="clientName" className="ml-2 text-lg font-bold">Nombre</label>
               <input
                 required
                 onChange={handleName}
@@ -109,13 +109,13 @@ function Form() {
                 className={`${errClientName
                   ? "border-red-600 focus-visible:border-red-600"
                   : "border-zinc-300/30 "
-                  } w-full bg-slate-300/40 border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-400`}
+                  } w-full bg-slate-100/90 border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-400`}
                 type="text"
-                placeholder={"Nombre"}
+                
               />
             </div>
             <div>
-              <label htmlFor="clientLastname" className="ml-2 text-lg">Apellido</label>
+              <label htmlFor="clientLastname" className="ml-2 text-lg font-bold">Apellido</label>
               <input
                 required
                 onChange={handleLastname}
@@ -123,13 +123,13 @@ function Form() {
                 className={`${errClientLastname
                   ? "border-red-600 focus-visible:border-red-600"
                   : "border-zinc-300/30 "
-                  } w-full bg-slate-300/30 border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-300`}
+                  } w-full bg-slate-100/90 border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-300`}
                 type="text"
-                placeholder={"Apellido"}
+                
               />
             </div>
             <div>
-              <label htmlFor="email" className="ml-2 text-lg">Mail</label>
+              <label htmlFor="email" className="ml-2 text-lg font-bold">Mail</label>
               <input
                 required
                 onChange={handleEmail}
@@ -137,13 +137,13 @@ function Form() {
                 className={`${errEmail
                   ? "border-red-600 focus-visible:border-red-600"
                   : "border-zinc-300/30 "
-                  } w-full bg-slate-300/30 border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-300`}
+                  } w-full bg-slate-100/90 border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-300`}
                 type="email"
-                placeholder={"Mail"}
+                
               />
             </div>
             <div>
-              <label htmlFor="phone" className="ml-2 text-lg">Teléfono</label>
+              <label htmlFor="phone" className="ml-2 text-lg font-bold">Teléfono</label>
               <input
                 required
                 onChange={handlePhone}
@@ -151,9 +151,9 @@ function Form() {
                 className={`${errPhone
                   ? "border-red-600 focus-visible:border-red-600"
                   : "border-zinc-300/30 "
-                  } w-full bg-slate-300/30 border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-300`}
+                  } w-full bg-slate-100/90 border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-300`}
                 type="text"
-                placeholder={"Teléfono"}
+                
               />
             </div>
           </div>
@@ -165,7 +165,7 @@ function Form() {
               className={`${errMessages
                 ? "border-red-600 focus-visible:border-red-600"
                 : "border-zinc-300/30 "
-                } w-full bg-slate-300/30 border-2 rounded-2xl px-4 py-2 text-base text-gray-600 outline-none duration-300 resize-none`}
+                } w-full bg-slate-100/90 border-2 rounded-2xl px-4 py-2 text-base text-gray-600 outline-none duration-300 resize-none`}
               placeholder={"Dejá acá tu consulta"}
               rows="8"
             ></textarea>
