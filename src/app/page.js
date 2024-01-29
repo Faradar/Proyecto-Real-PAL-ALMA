@@ -109,7 +109,7 @@ export default function Home() {
             className="mx-auto max-w-[920px] md:w-11/12 md:mt-[-20px] lg:w-12/12"
             alt="logo de pa'l alma grande"
           />
-          <p className="text-xs md:text-xl font-semibold py-2 w-64 max-w-[920px] md:w-auto mx-auto">
+          <p className="text-xs sm:text-sm md:text-xl font-semibold py-2 w-64 max-w-[920px] min-[530px]:w-auto mx-auto">
             “En el corazón de “Pa'l alma” late el amor por la diversidad
             biológica de Argentina. Nuestros productos son una manifestación de
             esta pasión, capturando la esencia única de la flora y fauna que nos
@@ -152,12 +152,17 @@ export default function Home() {
           alt="micelania marron"
         />
       </div>
-      <section className="w-11/12 m-auto 2xl:mr-20 mb-10">
-        <h2 className="font-bold text-left pl-8 text-xl lg:text-3xl">
-          ALGUNOS DE NUESTROS PRODUCTOS:
+      <section className="w-11/12 m-auto 2xl:mr-[90px] mb-10">
+        <h2 className="pl-8 font-bold text-center lg:text-xl 2xl:text-left">
+          Algunos de nuestros productos:
         </h2>
-        <div className="mx-auto grid 2xl:gap-x-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+        <div className="mx-auto grid 2xl:gap-x-16 grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4">
           <HomeCardList data={productos} linkHref="/productos" />
+        </div>
+        <h2 className="pl-8 font-bold text-center lg:text-xl 2xl:text-left mt-10">
+          Algunos de nuestros talleres:
+        </h2>
+        <div className="mx-auto grid 2xl:gap-x-16 grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4">
           <HomeCardList data={talleres} linkHref="/talleres" />
         </div>
       </section>
