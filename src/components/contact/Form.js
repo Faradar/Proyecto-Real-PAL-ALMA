@@ -87,7 +87,7 @@ function Form() {
   };
 
   return (
-    <section className="w-10/12 md:w-8/12 mx-auto mt-10">
+    <section className="w-10/12 md:w-3/5 mx-auto lg:mt-32">
       {successMsg ? (
         <p className="text-center text-xl font-bold p-20">
           {successMsg}

@@ -7,6 +7,8 @@ import miceAzul2 from '../../../../public/nosotras/miceAzul2.svg'
 import azulBorde2 from '../../../../public/nosotras/azulBorde2.svg'
 import miceVerde2 from '../../../../public/nosotras/miceVerde2.svg'
 import verdeBorde2 from '../../../../public/nosotras/verdeBorde2.svg'
+import miceMarron2 from '../../../../public/nosotras/miceMarron2.svg'
+import marronBorde2 from '../../../../public/nosotras/marronBorde2.svg'
 import ReadMore from '@/components/contact/ReadMore'
 import logo from '../../../../public/contacto/logo.svg'
 import miceAmarilla from '../../../../public/contacto/micelaniaAmarilla.svg'
@@ -49,6 +51,11 @@ function page() {
           </div>
         </div>
 
+        <div className="hidden lg:flex absolute left-0 top-full z-[-10]">
+          <Image src={marronBorde2} width={410} className="flex relative bottom-80 right-4" alt='borde de micelania marron 2' />
+          <Image src={miceMarron2} width={300} className="flex absolute bottom-96 z-[-20] left-0" alt='micelania marron 2' />
+        </div>
+
         <div className='grid grid-rows-4 lg:grid-cols-2 lg:grid-rows-1'>
           <Image className='lg:order-last w-44 lg:w-8/12 flex justify-self-center m-auto' src={pato} alt='foto de patricia'/>
           <div className='flex flex-col row-span-6 justify-center'>
@@ -62,9 +69,9 @@ function page() {
           <Image src={azulBorde2} width={200} className="flex absolute  bottom-72 right-4" alt='borde de micelania azul 2' />
           <Image src={miceAzul2} width={220} className="flex relative bottom-72 z-[-10] right-0" alt='micelania azul 2' />
         </div>
-        <div className="hidden lg:flex absolute left-0 top-full z-[-10]">
-          <Image src={verdeBorde2} width={400} className="flex relative  top-[550px] left-24" alt='borde de micelania verde 2'/>
-          <Image src={miceVerde2} width={370} className="flex absolute top-[550px] z-[-10] left-28" alt='micelania verde' />
+        <div className="hidden lg:flex absolute left-1/3 top-full z-[-10]">
+          <Image src={verdeBorde2} width={350} className="flex relative  top-[570px] left-1/2" alt='borde de micelania verde 2'/>
+          <Image src={miceVerde2} width={320} className="flex absolute top-[580px] z-[-10] left-1/2" alt='micelania verde' />
         </div>
       </main>
     </>

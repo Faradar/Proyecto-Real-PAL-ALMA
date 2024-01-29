@@ -110,15 +110,22 @@ function page() {
             <li className=" lg:w-3/4 lg:text-lg">Dirección: <a href="">Duarte Quirós 5223 - B° Lomas del Suquia - Casa interna 226</a></li>
             <li className=" lg:text-lg">Localidad: Cordoba capital - CP 5003</li>
           </ul>
-          <Link href="https://www.google.com/maps/place/Duarte+Quir%C3%B3s+5223,+C%C3%B3rdoba/@-31.3975708,-64.2500876,18.45z/data=!4m5!3m4!1s0x94329f31a7ca4715:0x291541482743d8d3!8m2!3d-31.397304!4d-64.2502643?entry=ttu" target="blank" className="flex md:hidden bg-orange-500 w-40 mx-auto p-2 mt-3 rounded-lg text-white justify-center text-xl font-bold">Ver Mapa</Link>
+          <h3 className="text-lg md:text-xl uppercase mt-3 lg:mt-3 mb-2 lg:mb-6">
+            horario de consulta: 
+          </h3>
+          <ul className="grid grid-cols-2">
+            <li className="lg:w-3/4 lg:text-lg">9 a 12:30 hs</li>
+            <li className="absolute right-10 bottom-96"><Link href="https://www.google.com/maps/place/Duarte+Quir%C3%B3s+5223,+C%C3%B3rdoba/@-31.3975708,-64.2500876,18.45z/data=!4m5!3m4!1s0x94329f31a7ca4715:0x291541482743d8d3!8m2!3d-31.397304!4d-64.2502643?entry=ttu" target="blank" className="flex lg:hidden bg-orange-500 w-40 mx-auto p-2 mt-3 rounded-lg text-white justify-center text-xl font-bold">Ver Mapa</Link>
+</li>
+          </ul>
         </div>
       </section>
-      <section className=" w-5/6 xl:w-2/3 mx-auto flex flex-col text-center">
+      <section className=" w-5/6 xl:w-3/5 mx-auto lg:mt-40 flex flex-col text-center">
         <h2 className="font-bold text-base md:text-xl mb-8">
           ¡Conecta con la escencia de la naturaleza a través de nuestros
           talleres y productos artesanales!
         </h2>
-        <p className="hidden md:flex">
+        <p className="hidden w-4/6 mx-auto md:flex">
           Para ofrecerte la asistencia adecuada, te pedimos que completes todos
           los campos del formulario de contacto. Esto nos ayudará a ofrecerte
           una mejor atención y responder a tus consultas o comentarios de una
