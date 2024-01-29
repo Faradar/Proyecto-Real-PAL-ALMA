@@ -8,7 +8,7 @@ import naranjaBorde from '../../../public/contacto/naranjaBorde.svg'
 
 function Banner() {
   return (
-    <section className='hidden md:grid md:grid-cols-3 justify-center my-10 bg-slate-950/10'>
+    <section className='hidden md:grid md:grid-cols-3 justify-center my-10 bg-slate-200/10'>
       <div className='hidden md:flex'>
         <Image src={amarillaBorde} width={210} alt='borde de micelania amarilla' />
         <div className='flex absolute top-48'>

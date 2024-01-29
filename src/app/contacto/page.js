@@ -1,4 +1,3 @@
-import Banner from "@/components/contact/Banner";
 import Form from "../../components/contact/Form";
 import miceVerde from "../../../public/contacto/micelaniaVerde.svg";
 import miceAzul from "../../../public/contacto/micelaniaAzul.svg";
@@ -6,13 +5,35 @@ import azulBorde from "../../../public/contacto/azulBorde.svg";
 import verdeBorde from "../../../public/contacto/verdeBorde.svg";
 import miceNaranja from "../../../public/contacto/miceNaranja.svg";
 import naranjaBorde from "../../../public/contacto/naranjaBorde2.svg";
+import logo from '../../../public/contacto/logo.svg'
+import miceBordo from '../../../public/contacto/miceBordo.svg'
+import miceNaranja3 from '../../../public/contacto/miceNaranja3.svg'
+import bordoBorde from '../../../public/contacto/bordoBorde.svg'
+import naranjaBorde3 from '../../../public/contacto/bordeNaranja3.svg'
+
 import Image from "next/image";
 import Link from "next/link";
 
 function page() {
   return (
     <main className="w-full">
-      <Banner />
+      <section className='hidden md:grid md:grid-cols-3 justify-center my-10 bg-slate-300/30 md:shadow-[0_6px_6px_-1px_rgba(0,0,0,0.3)]'>
+      <div className='hidden md:flex'>
+        <Image src={miceNaranja3} width={250} alt='micelania naranja' />
+        <div className='flex absolute top-40'>
+          <Image src={naranjaBorde3} width={250} alt='borde de micelania naranja'/>
+        </div>
+      </div>
+      <div className='flex'>
+        <Image src={logo} width={900} className='mx-auto' alt="logo pa'l alma" />
+      </div>
+      <div className='hidden md:flex justify-end'>
+        <Image src={miceBordo} width={210} alt='micelania bordo' />
+        <div className='flex absolute right-0'>
+          <Image src={bordoBorde} width={220} alt='borde de micelania bordo'/>
+        </div>
+      </div>
+    </section>
       <p className="flex justify-center text-lg lg:text-2xl my-4 font-bold">
         Pa'l alma tiene su casa en Córdoba Capital, Argentina
       </p>
@@ -44,12 +65,12 @@ function page() {
           alt=" borde de micelania verde mobile"
         />
       </div>
-      <section className="w-10/12 lg:w-9/12 flex flex-col md:flex-row mx-auto my-10">
+      <section className="w-10/12 lg:w-8/12 flex flex-col md:flex-row mx-auto my-10">
         <iframe
           className="hidden md:flex lg:w-1/2"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.6084521077305!2d-64.25286542405686!3d-31.397358174270547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329f4f9b39a933%3A0xdca784a664308b33!2sAv.%20Duarte%20Quir%C3%B3s%205223%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1702330800472!5m2!1ses-419!2sar"
           width={500}
-          height={350}
+          height={500}
           style={{ border: 0 }}
           allowFullScreen=""
           loading="lazy"
@@ -57,11 +78,11 @@ function page() {
         ></iframe>
 
         <div className="mx-auto md:pl-4 my-4 lg:my-0 lg:mr-4 flex flex-col text-left lg:text-left">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold uppercase mb-4 tracking-widest">
-            contactanos
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold uppercase mb-2 tracking-widest">
+            contacto :
           </h2>
           <ul className="text-lg">
-            <li className="pt-6 pb-2">WhatsApp: <br/> +5493513955439 (Pato) | +5493513870553 (María) </li>
+            <li className="pt-4 pb-2">WhatsApp: <br/> +5493513955439 (Pato) | +5493513870553 (María) </li>
             <li className="py-2">
               Facebook:{" "}
               <a href="https://www.facebook.com/profile.php?id=100085206638363" target="blank">
@@ -81,7 +102,7 @@ function page() {
               </a>
             </li>
           </ul>
-          <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold uppercase mt-6 lg:mt-10 mb-2 lg:mb-6 tracking-widest">
+          <h3 className="text-xl md:text-2xl lg:text-3xl font-bold uppercase mt-6 lg:mt-10 mb-2 lg:mb-6 tracking-widest">
             taller pa'l alma
           </h3>
           <ul>
@@ -91,8 +112,8 @@ function page() {
           <Link href="https://www.google.com/maps/place/Duarte+Quir%C3%B3s+5223,+C%C3%B3rdoba/@-31.3975708,-64.2500876,18.45z/data=!4m5!3m4!1s0x94329f31a7ca4715:0x291541482743d8d3!8m2!3d-31.397304!4d-64.2502643?entry=ttu" target="blank" className="flex md:hidden bg-orange-500 w-32 mx-auto p-2 rounded-lg text-white justify-center text-xl font-bold">Ver Mapa</Link>
         </div>
       </section>
-      <section className="w-9/12 mx-auto flex flex-col text-center">
-        <h2 className="font-bold text-lg">
+      <section className="w-2/3 xl:w-1/3 mx-auto flex flex-col text-center">
+        <h2 className="font-bold text-2xl mb-8">
           ¡Conecta con la escencia de la naturaleza a través de nuestros
           talleres y productos artesanales!
         </h2>

@@ -108,8 +108,8 @@ function Form() {
                 value={clientName}
                 className={`${errClientName
                   ? "border-red-600 focus-visible:border-red-600"
-                  : "border-zinc-600 "
-                  } w-full bg-transparent border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-300`}
+                  : "border-zinc-300/30 "
+                  } w-full bg-slate-300/40 border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-400`}
                 type="text"
                 placeholder={"Nombre"}
               />
@@ -122,8 +122,8 @@ function Form() {
                 value={clientLastname}
                 className={`${errClientLastname
                   ? "border-red-600 focus-visible:border-red-600"
-                  : "border-zinc-600 "
-                  } w-full bg-transparent border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-300`}
+                  : "border-zinc-300/30 "
+                  } w-full bg-slate-300/30 border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-300`}
                 type="text"
                 placeholder={"Apellido"}
               />
@@ -136,8 +136,8 @@ function Form() {
                 value={email}
                 className={`${errEmail
                   ? "border-red-600 focus-visible:border-red-600"
-                  : "border-zinc-600 "
-                  } w-full bg-transparent border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-300`}
+                  : "border-zinc-300/30 "
+                  } w-full bg-slate-300/30 border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-300`}
                 type="email"
                 placeholder={"Mail"}
               />
@@ -150,8 +150,8 @@ function Form() {
                 value={phone}
                 className={`${errPhone
                   ? "border-red-600 focus-visible:border-red-600"
-                  : "border-zinc-600 "
-                  } w-full bg-transparent border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-300`}
+                  : "border-zinc-300/30 "
+                  } w-full bg-slate-300/30 border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-300`}
                 type="text"
                 placeholder={"Teléfono"}
               />
@@ -164,8 +164,8 @@ function Form() {
               value={messages}
               className={`${errMessages
                 ? "border-red-600 focus-visible:border-red-600"
-                : "border-zinc-600 "
-                } w-full bg-transparent border-2 rounded-2xl px-4 py-2 text-base text-gray-600 outline-none duration-300 resize-none`}
+                : "border-zinc-300/30 "
+                } w-full bg-slate-300/30 border-2 rounded-2xl px-4 py-2 text-base text-gray-600 outline-none duration-300 resize-none`}
               placeholder={"Dejá acá tu consulta"}
               rows="8"
             ></textarea>
