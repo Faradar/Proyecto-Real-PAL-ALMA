@@ -156,17 +156,17 @@ export default function Home() {
       </div>
       <div className="absolute left-0 top-[2000px] sm:top-[1300px] md:top-[1800px] lg:top-[2000px] xl:top-[2200px] 2xl:top-[1500px] z-[-10]">
         <Image
-          src="/inicio/misc-outline-verde.svg"
+          src="/inicio/misc-outline-green.svg"
           width={300}
           height={300}
           className="flex absolute top-24 right-4"
           alt="borde de micelania verde"
         />
         <Image
-          src="/inicio/misc-color-verde.svg"
+          src="/inicio/misc-color-green.svg"
           width={300}
           height={300}
-          className="flex relative top-24 left-[0px]"
+          className="flex relative top-24 left-[0px] z-[-10]"
           alt="micelania verde"
         />
       </div>
