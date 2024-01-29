@@ -138,18 +138,36 @@ export default function Home() {
       <div className="flex items-center justify-center overflow-hidden mb-10">
         <Carousel images={carouselImages} />
       </div>
-      <div className="hidden lg:flex absolute right-0 top-full z-[-10]">
+      <div className="absolute right-0 top-full sm:top-[600px] md:top-[900px] lg:top-[1100px] xl:top-[1300px] 2xl:top-[1000px] z-[-10]">
         <Image
           src={marronBorde}
           width={450}
-          className="flex absolute  top-24 right-4"
+          height={450}
+          className="flex absolute top-24 right-4"
           alt="borde de micelania marron"
         />
         <Image
           src={miceMarron}
           width={450}
+          height={450}
           className="flex relative top-24 z-[-10] right-0"
           alt="micelania marron"
+        />
+      </div>
+      <div className="absolute left-0 top-[2000px] sm:top-[1300px] md:top-[1800px] lg:top-[2000px] xl:top-[2200px] 2xl:top-[1500px] z-[-10]">
+        <Image
+          src="/inicio/misc-outline-verde.svg"
+          width={300}
+          height={300}
+          className="flex absolute top-24 right-4"
+          alt="borde de micelania verde"
+        />
+        <Image
+          src="/inicio/misc-color-verde.svg"
+          width={300}
+          height={300}
+          className="flex relative top-24 left-[0px]"
+          alt="micelania verde"
         />
       </div>
       <section className="w-11/12 m-auto 2xl:mr-[90px] mb-10">
