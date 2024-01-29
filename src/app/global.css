@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -19,9 +18,7 @@
   grid-template-rows: 100px;
   grid-template-areas: "copyR logoF redes";
   align-items: center;
-
   font-style: normal;
-  font-family: Quicksand;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -55,8 +52,8 @@
   margin-right: 10px;
 }
 .logoRedes {
-  width: 28.39px;
-  height: 23.47px;
+  width: 24px;
+  height: 24px;
 }
 
 @media (max-width: 768px) {

@@ -1,4 +1,3 @@
-import Banner from '@/components/contact/Banner'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -39,24 +38,24 @@ function page() {
         </div>
       </section>
       <section className='flex flex-col justify-center text-center'>
-        <h2 className='text-4xl font-bold uppercase my-4'>Nuestra misión</h2>
+        <h2 className='text-2xl font-bold uppercase my-4'>Nuestra misión</h2>
         <p className='text-lg font-bold w-9/12 mx-auto'>Ofrecer productos que reflejen la belleza natural de nuestro país y al mismo tiempo concientizar sobre la importancia crucial del cuidado del medio ambiente y la economía circular.</p>
       </section>
       <div className="md:hidden absolute right-0 top-10 z-[-10]">
-        <Image src={verdeBorde} width={160} className="flex relative top-56 right-0" alt='borde de micelania verde' />
+        <Image src={verdeBorde} width={130} className="flex relative top-56 right-0" alt='borde de micelania verde' />
         <Image src={miceVerde} width={110} className="flex absolute right-0" alt='micelania verde' />
       </div>
       <section className='flex flex-col text-center my-10 text-lg md:text-lg w-10/12 mx-auto'>
         <div>
-          <h2 className='text-4xl font-bold uppercase mb-4'>¿Quiénes somos?</h2>
-          <p className='w-8/12 my-6 mx-auto'>PA'L ALMA es una marca que nació del sueño de dos mamás profesionales tratando de conjugar la vida familiar con su trabajo, su pasión por las <b>ARTES PLÁSTICAS, el DIBUJO, la NATURALEZA, las EXPERIENCIAS al AIRE LIBRE y VIAJARSomos Patricia y María, nos conoc</b>.</p>
-          <p className='w-8/12 my-6 mx-auto'>Somos Patricia y María, nos conocimos en el colegio de nuestros hijos y compartiendo encuentros se fue consolidando una amistad y proyectos en común. Decidimos emprender juntas desde el 2021, para dar forma a este proyecto conjugando nuestra formación en Artes Plásticas, Diseño Industrial y Arquitectura.</p>
-          <p className='w-8/12 my-6 mx-auto'>Ambas con una mirada sensible ante el bienestar personal, la búsqueda y expresión de las emociones a través del ARTE y el cuidado del medio ambiente.</p>
-          <p className='w-8/12 my-6 mx-auto'>El nombre PA'L ALMA surgió de la búsqueda por encontrar una expresión autóctona que pudiera reflejar nuestro sentir con este proyecto y además tuviera las iniciales de nuestros nombres, Patricia y María.</p>
-          <p className='w-8/12 my-6 mx-auto'>Nuestra idea original era poder mostrar a través de nuestros dibujos, hechos a mano alzada, la flora y fauna de cada región de Argentina. Poder transmitir con nuestra riqueza natural, conocimientos y curiosidades sobre cada especie y además fomentar el cuidado de la naturaleza y biodiversidad.</p>
-          <p className='w-8/12 my-6 mx-auto'>Nos dimos cuenta que con esta idea podríamos generar productos que evocaran un recuerdo o un momento especial vivido durante un viaje por Argentina. Que fueran prácticos y funcionales a la vez pero con impronta de diseño y estilo autóctono. Tenemos como objetivo incorporar el concepto de la economía circular reciclando materiales principalmente del área textil.</p>
-          <p className='w-8/12 my-6 mx-auto'>Sabemos que desde el arte se puede lograr un bienestar y fomentar la expresión y la creatividad. Esta es la razón por la que decidimos llegar a niños y adultos a través de talleres de arte. Siguiendo con el concepto del reciclado y promoviendo las actividades artísticas con materiales cotidianos.</p>
-          <p className='w-8/12 my-6 mx-auto'>Esperamos ver crecer a PA'L ALMA como nuestro hijo de corazón, fuerte, emprendiendo un vuelo alto y dejando su huella.</p>
+          <h2 className='text-2xl font-bold uppercase mb-4'>¿Quiénes somos?</h2>
+          <p className='w-11/12 lg:w-8/12 my-6 mx-auto'>PA'L ALMA es una marca que nació del sueño de dos mamás profesionales tratando de conjugar la vida familiar con su trabajo, su pasión por las <b>ARTES PLÁSTICAS, el DIBUJO, la NATURALEZA, las EXPERIENCIAS al AIRE LIBRE y VIAJARSomos Patricia y María, nos conoc</b>.</p>
+          <p className='w-11/12 lg:w-8/12 my-6 mx-auto'>Somos Patricia y María, nos conocimos en el colegio de nuestros hijos y compartiendo encuentros se fue consolidando una amistad y proyectos en común. Decidimos emprender juntas desde el 2021, para dar forma a este proyecto conjugando nuestra formación en Artes Plásticas, Diseño Industrial y Arquitectura.</p>
+          <p className='w-11/12 lg:w-8/12 my-6 mx-auto'>Ambas con una mirada sensible ante el bienestar personal, la búsqueda y expresión de las emociones a través del ARTE y el cuidado del medio ambiente.</p>
+          <p className='w-11/12 lg:w-8/12 my-6 mx-auto'>El nombre PA'L ALMA surgió de la búsqueda por encontrar una expresión autóctona que pudiera reflejar nuestro sentir con este proyecto y además tuviera las iniciales de nuestros nombres, Patricia y María.</p>
+          <p className='w-11/12 lg:w-8/12 my-6 mx-auto hidden lg:flex'>Nuestra idea original era poder mostrar a través de nuestros dibujos, hechos a mano alzada, la flora y fauna de cada región de Argentina. Poder transmitir con nuestra riqueza natural, conocimientos y curiosidades sobre cada especie y además fomentar el cuidado de la naturaleza y biodiversidad.</p>
+          <p className='w-11/12 lg:w-8/12 my-6 mx-auto hidden lg:flex'>Nos dimos cuenta que con esta idea podríamos generar productos que evocaran un recuerdo o un momento especial vivido durante un viaje por Argentina. Que fueran prácticos y funcionales a la vez pero con impronta de diseño y estilo autóctono. Tenemos como objetivo incorporar el concepto de la economía circular reciclando materiales principalmente del área textil.</p>
+          <p className='w-11/12 lg:w-8/12 my-6 mx-auto hidden lg:flex'>Sabemos que desde el arte se puede lograr un bienestar y fomentar la expresión y la creatividad. Esta es la razón por la que decidimos llegar a niños y adultos a través de talleres de arte. Siguiendo con el concepto del reciclado y promoviendo las actividades artísticas con materiales cotidianos.</p>
+          <p className='w-11/12 lg:w-8/12 my-6 mx-auto hidden lg:flex'>Esperamos ver crecer a PA'L ALMA como nuestro hijo de corazón, fuerte, emprendiendo un vuelo alto y dejando su huella.</p>
           
         </div>
         <Image className='mx-auto hidden md:flex mt-16 mb-10 md:w-3/4 xl:w-8/12' src={fotoJuntas} width={400} alt='foto de patricia y maria' />
@@ -73,7 +72,7 @@ function page() {
         <Image src={azulBorde2} width={230} className="flex absolute  top-72 right-4" alt='borde de micelania azul 2' />
         <Image src={miceAzul2} width={250} className="flex relative top-72 z-[-10] right-0" alt='micelania azul 2' />
       </div>
-      <Link href="/nosotras/masInfo" className='w-7/12 text-center flex justify-center mx-auto uppercase m-10 py-4 bg-orange-600 rounded-xl text-white hover:bg-orange-700'>Más sobre nosotras</Link>
+      <Link href="/nosotras/masInfo" className='w-10/12 lg:w-7/12 text-center flex justify-center mx-auto uppercase mt-40 py-4 bg-orange-600 rounded-xl text-white hover:bg-orange-700'>Más sobre nosotras</Link>
     </main>
 
   )
