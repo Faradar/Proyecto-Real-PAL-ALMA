@@ -13,10 +13,11 @@ import naranjaBorde3 from '../../../public/contacto/bordeNaranja3.svg'
 
 import Image from "next/image";
 import Link from "next/link";
+import autoprefixer from "autoprefixer";
 
 function page() {
   return (
-    <main className="w-full">
+    <main className="w-full overflow-hidden">
       <section className='hidden md:grid md:grid-cols-3 justify-center my-10 bg-slate-300/30 md:shadow-[0_6px_6px_-1px_rgba(0,0,0,0.3)]'>
       <div className='hidden md:flex'>
         <Image src={miceNaranja3} width={250} alt='micelania naranja' />
