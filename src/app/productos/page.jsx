@@ -4,35 +4,35 @@ import './productos.css'
 
 export default function productos() {
     return (
-    <div>
-        <div class="relative z-[-99]">
+      <div>
+        {/* <div class="relative z-[-99]">
                 <div class="absolute img1">
                     <img  src="/img/productos/first.svg" alt="Fondo1" />
                     
                 </div>  
                 
-            </div>
-        <div class="relative z-[-99] ">
-            <div  class="absolute right-0">
+            </div> */}
+        <div className="relative z-[-99] ">
+            <div  className="absolute right-0">
                 <img  src="/img/productos/firstFon.svg" alt="Fondocolor" />
             </div>
-            <div class="absolute top-1 right-0">
+            <div className="absolute top-1 right-0">
                 <img  src="/img/productos/sec.svg" alt="Fondo2" />
             </div>
         </div>
-        <div class="relative z-[-99]">
-            <div class="absolute img-thirdFon">
+        <div className="relative z-[-99]">
+            <div className="absolute img-thirdFon">
                     <img  src="/img/productos/thirdFon.svg" alt="Fondocolor3" />
                 </div> 
-                <div class="absolute img-third">
+                <div className="absolute img-third">
                     <img  src="/img/productos/third.svg" alt="Fondo3" />
                 </div>   
         </div>
-        <div class="relative z-[-99]">
-                <div class="absolute img-fourthFon">
+        <div className="relative z-[-99]">
+                <div className="absolute img-fourthFon">
                     <img  src="/img/productos/fourthFon.svg" alt="Fondocolor4" />
                 </div> 
-                <div class="absolute img-fourth">
+                <div className="absolute img-fourth">
                     <img  src="/img/productos/fourth.svg" alt="Fondo4" />
                 </div>   
             </div>
@@ -46,7 +46,7 @@ export default function productos() {
                     <h2 className="text-x pt-10 pl-10">
                         Capturando la esencia única de la flora y fauna que nos rodea.
                     </h2>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 bg-eaf0f4 p-4 md:p-10 ">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 bg-eaf0f4 p-4 p-10 ">
                         <div className="flex items-center justify-center flex-col">
                             <img src="/img/Taza Cerámica_Mariposa Borde de Oro 2.png" alt="Tasas Ceramica" />
                             <span className="font-bold">Taza cerámica Mariposa borde de oro</span>
@@ -101,9 +101,11 @@ export default function productos() {
                     </div>
                 </div>
             </div>
-            </div>
-            <div className="grid grid-cols-2 point">
-                <div className="w-1223px text-center font-bold text-sm bg-#F2F6F8  items-center justify-center m-5 point-text">
+            <p className="text-center pt-10 font-bold">
+                Si querés conocer más productos escribinos a nuestro WhatsApp +54 9 3513955439 (Pato) | +54 9 3513870553 (María)
+            </p>
+            <div className="flex items-center justify-center flex-col md:flex-row  bg-eaf0f4 p-4">
+                <div className="max-w-1200 text-center font-bold text-sm m-5 items-center justify-center m-5 point-text">
                     <h2>¿Cómo comprar nuestros productos vía WhatsApp?</h2>
                     <p className="max-w-600 m-5 font-quicksand text-left">
                         1. Explora nuestra variedad de productos y elige el que más te guste. <br/>
@@ -122,5 +124,6 @@ export default function productos() {
                 </div>
             </div>
         </div>
+      </div>
     );
-}
+  }
