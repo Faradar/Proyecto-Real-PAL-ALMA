@@ -70,8 +70,8 @@
     margin: 10px;
 }
 .descrption_taller{
-    min-width: 160px;
-    min-height: 160px;
+    max-width: 507px;
+    max-height: 200px;
     text-align: left;
     padding: 10px;
     background-color: #D9D9D9;
