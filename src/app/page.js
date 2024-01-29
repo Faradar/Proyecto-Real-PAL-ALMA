@@ -138,7 +138,7 @@ export default function Home() {
       <div className="flex items-center justify-center overflow-hidden mb-10">
         <Carousel images={carouselImages} />
       </div>
-      <div className="absolute right-0 top-full sm:top-[600px] md:top-[900px] lg:top-[1100px] xl:top-[1300px] 2xl:top-[1000px] z-[-10]">
+      <div className="absolute right-0 top-full min-[540px]:top-[600px] md:top-[900px] lg:top-[1100px] xl:top-[1300px] 2xl:top-[1000px] z-[-10]">
         <Image
           src={marronBorde}
           width={450}
@@ -154,7 +154,7 @@ export default function Home() {
           alt="micelania marron"
         />
       </div>
-      <div className="absolute left-0 top-[2000px] sm:top-[1300px] md:top-[1800px] lg:top-[2000px] xl:top-[2200px] 2xl:top-[1500px] z-[-10]">
+      <div className="absolute left-0 top-[2000px] min-[540px]:top-[1300px] md:top-[1800px] lg:top-[2000px] xl:top-[2200px] 2xl:top-[1500px] z-[-10]">
         <Image
           src="/inicio/misc-outline-green.svg"
           width={300}
@@ -174,13 +174,13 @@ export default function Home() {
         <h2 className="pl-8 font-bold text-center lg:text-xl 2xl:text-left">
           Algunos de nuestros productos:
         </h2>
-        <div className="mx-auto grid 2xl:gap-x-16 grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4">
+        <div className="mx-auto grid 2xl:gap-x-16 grid-cols-1 min-[540px]:grid-cols-2 2xl:grid-cols-4">
           <HomeCardList data={productos} linkHref="/productos" />
         </div>
         <h2 className="pl-8 font-bold text-center lg:text-xl 2xl:text-left mt-10">
           Algunos de nuestros talleres:
         </h2>
-        <div className="mx-auto grid 2xl:gap-x-16 grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4">
+        <div className="mx-auto grid 2xl:gap-x-16 grid-cols-1 min-[540px]:grid-cols-2 2xl:grid-cols-4">
           <HomeCardList data={talleres} linkHref="/talleres" />
         </div>
       </section>
