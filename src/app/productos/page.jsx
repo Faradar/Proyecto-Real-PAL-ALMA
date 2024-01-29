@@ -12,27 +12,27 @@ export default function productos() {
                 </div>  
                 
             </div> */}
-        <div class="relative z-[-99] ">
-            <div  class="absolute right-0">
+        <div className="relative z-[-99] ">
+            <div  className="absolute right-0">
                 <img  src="/img/productos/firstFon.svg" alt="Fondocolor" />
             </div>
-            <div class="absolute top-1 right-0">
+            <div className="absolute top-1 right-0">
                 <img  src="/img/productos/sec.svg" alt="Fondo2" />
             </div>
         </div>
-        <div class="relative z-[-99]">
-            <div class="absolute img-thirdFon">
+        <div className="relative z-[-99]">
+            <div className="absolute img-thirdFon">
                     <img  src="/img/productos/thirdFon.svg" alt="Fondocolor3" />
                 </div> 
-                <div class="absolute img-third">
+                <div className="absolute img-third">
                     <img  src="/img/productos/third.svg" alt="Fondo3" />
                 </div>   
         </div>
-        <div class="relative z-[-99]">
-                <div class="absolute img-fourthFon">
+        <div className="relative z-[-99]">
+                <div className="absolute img-fourthFon">
                     <img  src="/img/productos/fourthFon.svg" alt="Fondocolor4" />
                 </div> 
-                <div class="absolute img-fourth">
+                <div className="absolute img-fourth">
                     <img  src="/img/productos/fourth.svg" alt="Fondo4" />
                 </div>   
             </div>
