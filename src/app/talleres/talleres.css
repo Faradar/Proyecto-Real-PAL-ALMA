@@ -93,7 +93,7 @@
 }
 .texttalleres{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 0px 50px;
 }
 .talleres_img{
     width: 163.14px;
@@ -121,4 +121,26 @@
         height: 220px;
         border-radius: 8px;
     }
+}
+
+.imgGaleria{
+    max-width: 240px;
+    max-height: 108px;
+    border-radius: 8px;
+}
+.select{
+    background-color: rgb(185, 180, 180);
+    padding: 5px;
+}
+
+.coment{
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr ;
+    gap: 20px;
+    padding: 10px;
+    background-color: #EAF0F4;
+    border-radius: 8px;
+    margin: 10px;
 }

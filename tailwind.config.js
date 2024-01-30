@@ -21,7 +21,14 @@ module.exports = {
       },
       maxWidth: {
         '600': '600px',
-      }
+      },
+      width: {
+        '95': '95%',
+        '85': '85%'
+      },
+      height: {
+        '650': '650px',
+      },
     },
   },
   plugins: [],
