@@ -83,20 +83,20 @@ function page() {
             contacto :
           </h2>
           <ul className="text-lg">
-            <li className="pt-4">WhatsApp: <br/> +5493513955439 (Pato) | +5493513870553 (María) </li>
-            <li className="">
+            <li className="pt-4">WhatsApp: <br/> <a className=" hover:text-slate-400" href="https://wa.me/+5493513955439?text=Buenas!+Me+contacto+desde+la+página+web" target="blank">+5493513955439 (Pato)</a> | <a className=" hover:text-slate-400" href="https://wa.me/+5493513870553?text=Buenas!+Me+contacto+desde+la+página+web" target="blank"> +5493513870553 (María)</a></li>
+            <li className=" hover:text-slate-400">
               Facebook:{" "}
               <a href="https://www.facebook.com/profile.php?id=100085206638363" target="blank">
                 pa'l alma dibujos
               </a>
             </li>
-            <li className="">
+            <li className=" hover:text-slate-400">
               Instagram:{" "}
               <a href="https://www.instagram.com/palalma.dibujos?igsh=c2xiyjlmagh4nwdv" target="blank">
                 palalma.dibujos
               </a>
             </li>
-            <li className="">
+            <li className=" hover:text-slate-400">
               Email:{" "}
               <a href="mailto:palalma.argentina@gmail.com" target="blank">
                 palalma.argentina@gmail.com
@@ -107,16 +107,11 @@ function page() {
             taller pa'l alma
           </h3>
           <ul>
-            <li className=" lg:w-3/4 lg:text-lg">Dirección: <a href="">Duarte Quirós 5223 - B° Lomas del Suquia - Casa interna 226</a></li>
+            <li className=" lg:w-3/4 lg:text-lg">Dirección: Duarte Quirós 5223 - B° Lomas del Suquia - Casa interna 226</li>
             <li className=" lg:text-lg">Localidad: Cordoba capital - CP 5003</li>
-          </ul>
-          <h3 className="text-lg md:text-xl uppercase mt-3 lg:mt-3 mb-2 lg:mb-6">
-            horario de consulta: 
-          </h3>
-          <ul className="grid grid-cols-2">
+            <li className="lg:w-3/4 lg:text-lg">HORARIO DE CONSULTA:</li>
             <li className="lg:w-3/4 lg:text-lg">9 a 12:30 hs</li>
-            <li className="absolute right-10 bottom-96"><Link href="https://www.google.com/maps/place/Duarte+Quir%C3%B3s+5223,+C%C3%B3rdoba/@-31.3975708,-64.2500876,18.45z/data=!4m5!3m4!1s0x94329f31a7ca4715:0x291541482743d8d3!8m2!3d-31.397304!4d-64.2502643?entry=ttu" target="blank" className="flex lg:hidden bg-orange-500 w-40 mx-auto p-2 mt-3 rounded-lg text-white justify-center text-xl font-bold">Ver Mapa</Link>
-</li>
+            <li className="relative left-40 bottom-14"><Link href="https://www.google.com/maps/place/Duarte+Quir%C3%B3s+5223,+C%C3%B3rdoba/@-31.3975708,-64.2500876,18.45z/data=!4m5!3m4!1s0x94329f31a7ca4715:0x291541482743d8d3!8m2!3d-31.397304!4d-64.2502643?entry=ttu" target="blank" className="flex lg:hidden bg-orange-500 w-36 mx-auto p-2 mt-3 rounded-lg text-white justify-center text-xl font-bold">Ver Mapa</Link></li>
           </ul>
         </div>
       </section>
