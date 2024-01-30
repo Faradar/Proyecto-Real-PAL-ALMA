@@ -2,93 +2,97 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-* { margin: 0;
-    padding: 0;
-    box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .footer {
-    background: #EAF0F499;
-    width: 100%;
-    height: 100px;
-    mix-blend-mode: normal;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px;
-    grid-template-areas: "copyR logoF redes";
-    align-items: center; 
-
-    font-style: normal;
-    font-family: Quicksand;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0em;
-    text-align: justified;
-    color: #000000;
+  background: #eaf0f499;
+  width: 100%;
+  height: 100px;
+  mix-blend-mode: normal;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px;
+  grid-template-areas: "copyR logoF redes";
+  align-items: center;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: justified;
+  color: #000000;
 }
 
 .copyR {
-    grid-area: copyR;
-    justify-self:center;
-    align-self: center; }
+  grid-area: copyR;
+  justify-self: center;
+  align-self: center;
+}
 
 .logoF {
-    grid-area: logoF;
-    justify-self:center;
-    align-self: center;
+  grid-area: logoF;
+  justify-self: center;
+  align-self: center;
 }
 
 .redes {
-    grid-area: redes;
-    justify-self:center;
-    align-self: center;
+  grid-area: redes;
+  justify-self: center;
+  align-self: center;
 }
 .redes-items {
-    display: flex; 
-    align-items: center; 
+  display: flex;
+  align-items: center;
 }
-.redes-items h2{
-    margin-right: 10px;
+.redes-items h2 {
+  margin-right: 10px;
 }
 .logoRedes {
-    width: 28.39px;
-    height: 23.47px; }
-    
+  width: 24px;
+  height: 24px;
+}
 
 @media (max-width: 768px) {
-.footer {
+  .footer {
     height: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-template-areas: "copyR logoF redes";
     align-items: center;
-    gap: 5px; 
+    gap: 5px;
     font-size: 12px;
-    line-height: 15px;}
+    line-height: 15px;
+  }
 }
 
 @media screen and (max-width: 440px) {
-.footer {
+  .footer {
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: "copyR copyR logoF redes redes";
     align-items: center;
-    gap: 2px; 
+    gap: 2px;
     font-size: 9px;
-    line-height: 15px;}
+    line-height: 15px;
+  }
 
-.logoRedes {
+  .logoRedes {
     width: 18px;
-    height: 15px; }
-.logoFooter {
+    height: 15px;
+  }
+  .logoFooter {
     width: 83px;
-    height: 25px;}
+    height: 25px;
+  }
 }
 
 @media screen and (max-width: 380px) {
-    .footer {
-        gap: 1px; 
-        font-size: 8px;}
+  .footer {
+    gap: 1px;
+    font-size: 8px;
+  }
 }

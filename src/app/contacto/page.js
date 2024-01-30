@@ -13,10 +13,11 @@ import naranjaBorde3 from '../../../public/contacto/bordeNaranja3.svg'
 
 import Image from "next/image";
 import Link from "next/link";
+import autoprefixer from "autoprefixer";
 
 function page() {
   return (
-    <main className="w-full">
+    <main className="w-full overflow-hidden">
       <section className='hidden md:grid md:grid-cols-3 justify-center my-10 bg-slate-300/30 md:shadow-[0_6px_6px_-1px_rgba(0,0,0,0.3)]'>
       <div className='hidden md:flex'>
         <Image src={miceNaranja3} width={250} alt='micelania naranja' />
@@ -65,9 +66,9 @@ function page() {
           alt=" borde de micelania verde mobile"
         />
       </div>
-      <section className="w-10/12 lg:w-8/12 flex flex-col md:flex-row mx-auto my-10">
+      <section className="w-10/12 lg:w-11/12 flex flex-col md:flex-row mx-auto lg:ml-60 lg:mr-auto my-10">
         <iframe
-          className="hidden md:flex lg:w-1/2"
+          className="hidden lg:flex lg:w-1/2"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.6084521077305!2d-64.25286542405686!3d-31.397358174270547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329f4f9b39a933%3A0xdca784a664308b33!2sAv.%20Duarte%20Quir%C3%B3s%205223%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1702330800472!5m2!1ses-419!2sar"
           width={500}
           height={500}
@@ -77,25 +78,25 @@ function page() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
 
-        <div className="mx-auto md:pl-4 my-4 lg:my-0 lg:mr-4 flex flex-col text-left lg:text-left">
+        <div className="w-2/3 pl-0 ml-0 mx-auto md:pl-4 my-4 lg:my-0 lg:ml-6 xl:mr-4 flex flex-col text-left">
           <h2 className="text-xl md:text-2xl lg:text-3xl font-bold uppercase mb-2 tracking-widest">
             contacto :
           </h2>
           <ul className="text-lg">
-            <li className="pt-4 pb-2">WhatsApp: <br/> +5493513955439 (Pato) | +5493513870553 (María) </li>
-            <li className="py-2">
+            <li className="pt-4">WhatsApp: <br/> <a className=" hover:text-slate-400" href="https://wa.me/+5493513955439?text=Buenas!+Me+contacto+desde+la+página+web" target="blank">+5493513955439 (Pato)</a> | <a className=" hover:text-slate-400" href="https://wa.me/+5493513870553?text=Buenas!+Me+contacto+desde+la+página+web" target="blank"> +5493513870553 (María)</a></li>
+            <li className=" hover:text-slate-400">
               Facebook:{" "}
               <a href="https://www.facebook.com/profile.php?id=100085206638363" target="blank">
                 pa'l alma dibujos
               </a>
             </li>
-            <li className="py-2">
+            <li className=" hover:text-slate-400">
               Instagram:{" "}
               <a href="https://www.instagram.com/palalma.dibujos?igsh=c2xiyjlmagh4nwdv" target="blank">
                 palalma.dibujos
               </a>
             </li>
-            <li className="py-2">
+            <li className=" hover:text-slate-400">
               Email:{" "}
               <a href="mailto:palalma.argentina@gmail.com" target="blank">
                 palalma.argentina@gmail.com
@@ -106,24 +107,26 @@ function page() {
             taller pa'l alma
           </h3>
           <ul>
-            <li className="py-2 lg:text-lg">Dirección: <a href="">Duarte Quirós 5223 - B° Lomas del Suquia - Casa interna 226</a></li>
-            <li className="py-2 lg:text-lg">Localidad: Cordoba capital - CP 5003</li>
+            <li className=" lg:w-3/4 lg:text-lg">Dirección: Duarte Quirós 5223 - B° Lomas del Suquia - Casa interna 226</li>
+            <li className=" lg:text-lg">Localidad: Cordoba capital - CP 5003</li>
+            <li className="lg:w-3/4 lg:text-lg">HORARIO DE CONSULTA:</li>
+            <li className="lg:w-3/4 lg:text-lg">9 a 12:30 hs</li>
+            <li className="relative left-40 bottom-14"><Link href="https://www.google.com/maps/place/Duarte+Quir%C3%B3s+5223,+C%C3%B3rdoba/@-31.3975708,-64.2500876,18.45z/data=!4m5!3m4!1s0x94329f31a7ca4715:0x291541482743d8d3!8m2!3d-31.397304!4d-64.2502643?entry=ttu" target="blank" className="flex lg:hidden bg-orange-500 w-36 mx-auto p-2 mt-3 rounded-lg text-white justify-center text-xl font-bold">Ver Mapa</Link></li>
           </ul>
-          <Link href="https://www.google.com/maps/place/Duarte+Quir%C3%B3s+5223,+C%C3%B3rdoba/@-31.3975708,-64.2500876,18.45z/data=!4m5!3m4!1s0x94329f31a7ca4715:0x291541482743d8d3!8m2!3d-31.397304!4d-64.2502643?entry=ttu" target="blank" className="flex md:hidden bg-orange-500 w-32 mx-auto p-2 rounded-lg text-white justify-center text-xl font-bold">Ver Mapa</Link>
         </div>
       </section>
-      <section className="w-2/3 xl:w-1/3 mx-auto flex flex-col text-center">
-        <h2 className="font-bold text-2xl mb-8">
+      <section className=" w-5/6 xl:w-3/5 mx-auto lg:mt-40 flex flex-col text-center">
+        <h2 className="font-bold text-base md:text-xl mb-8">
           ¡Conecta con la escencia de la naturaleza a través de nuestros
           talleres y productos artesanales!
         </h2>
-        <p>
+        <p className="hidden w-4/6 mx-auto md:flex">
           Para ofrecerte la asistencia adecuada, te pedimos que completes todos
           los campos del formulario de contacto. Esto nos ayudará a ofrecerte
           una mejor atención y responder a tus consultas o comentarios de una
           manera oportuna.
         </p>
-        <p>¡Gracias por conectarte con nosotros!</p>
+        <p className="hidden md:flex mx-auto">¡Gracias por conectarte con nosotros!</p>
       </section>
       <div className="hidden lg:flex absolute">
         <Image src={azulBorde} width={340} className="flex  relative left-0" alt="borde de micelania azul"/>
