@@ -7,6 +7,8 @@ import miceAzul2 from '../../../../public/nosotras/miceAzul2.svg'
 import azulBorde2 from '../../../../public/nosotras/azulBorde2.svg'
 import miceVerde2 from '../../../../public/nosotras/miceVerde2.svg'
 import verdeBorde2 from '../../../../public/nosotras/verdeBorde2.svg'
+import miceMarron2 from '../../../../public/nosotras/miceMarron2.svg'
+import marronBorde2 from '../../../../public/nosotras/marronBorde2.svg'
 import ReadMore from '@/components/contact/ReadMore'
 import logo from '../../../../public/contacto/logo.svg'
 import miceAmarilla from '../../../../public/contacto/micelaniaAmarilla.svg'
@@ -37,10 +39,10 @@ function page() {
           </div>
         </div>
       </section>
-      <main className='w-10/12 mx-auto my-4 overflow-x-hidden  bg-slate-50/20'>
-        <div className='grid grid-rows-3 lg:grid-cols-2 lg:grid-rows-1 gap-10 lg:mb-28'>
-          <Image src={mari} className='w-44 md:w-8/12 flex justify-self-center m-auto' alt='foto de maria' />
-          <div className='flex flex-col row-span-3 justify-center'>
+      <main className='w-10/12 mx-auto overflow-x-hidden  bg-slate-50/20'>
+        <div className='grid grid-rows-4 lg:grid-cols-2 mt-3 lg:grid-rows-1 lg:mb-28'>
+          <Image src={mari} className='w-44 lg:w-8/12 flex justify-self-center m-auto' alt='foto de maria' />
+          <div className='flex flex-col row-span-6 justify-center'>
             <p className='mb-4 text-lg'>Mi nombre es María de los Ángeles Carranza, nací en el interior de Córdoba en una ciudad que se llama Cruz del Eje, ciudad a la que llegaron mis padres como grandes emprendedores por lo que mamé desde niña el esfuerzo y la gratificación de trabajar por cuenta propia.</p>
             <p className='mb-4 text-lg'>Desde que recuerdo me gusta dibujar. A los 9 años empecé a asistir a la escuela de bellas artes, mi vida transcurría en el taller infantil, luego taller infanto juvenil y magisterio, mis dibujos preferidos siempre eran los árboles, ese camino finalizó a los 17 cuando egresé como maestra de Artes Plásticas</p>
             <ReadMore 
@@ -49,9 +51,14 @@ function page() {
           </div>
         </div>
 
-        <div className='grid grid-rows-3 lg:grid-cols-2 lg:grid-rows-1'>
-          <Image className='lg:order-last w-44 md:w-8/12 flex justify-self-center m-auto' src={pato} alt='foto de patricia'/>
-          <div className='flex flex-col my-4 row-span-3 justify-center'>
+        <div className="hidden lg:flex absolute left-0 top-full z-[-10]">
+          <Image src={marronBorde2} width={410} className="flex relative bottom-80 right-4" alt='borde de micelania marron 2' />
+          <Image src={miceMarron2} width={300} className="flex absolute bottom-96 z-[-20] left-0" alt='micelania marron 2' />
+        </div>
+
+        <div className='grid grid-rows-4 lg:grid-cols-2 lg:grid-rows-1'>
+          <Image className='lg:order-last w-44 lg:w-8/12 flex justify-self-center m-auto' src={pato} alt='foto de patricia'/>
+          <div className='flex flex-col row-span-6 justify-center'>
             <p className="mb-4 text-lg">Soy Patricia Ariadna Furbatto, nací en Córdoba Capital y viví a lo largo de mi infancia en distintas provincias de Argentina. Hija de madre patagónica con alma viajera, incorporé desde pequeña la vida nómade, los cambios constantes, las aventuras al aire libre y el amor por la naturaleza.</p>
             <p className="mb-4 text-lg">Cada recuerdo que tengo de mi infancia, veo a la niña que siempre disfrutó expresarse a través del dibujo de una manera innata. Esos momentos en los que me encontraba con los lápices de colores y mis cuadernos era como introducirme en un mundo mágico para dejar volar la imaginación y donde cualquier cosa sería posible.Mis primeros pasos en este mundo fueron guiados por mi mamá, también artista aficionada. Muchos de los aprendizajes durante mi niñez y adolescencia fueron más como autodidacta.</p>
             <ReadMore text={`A los 18 años tuve la oportunidad de hacer un intercambio cultural en el extranjero por 6 meses, lo cual afianzó más el amor por Argentina y mis raíces. Fue ya en la Facultad de Arquitectura donde aprendí los diferentes códigos sobre el lenguaje del dibujo técnico, la perspectiva, el croquizado y el color.`}
@@ -62,9 +69,9 @@ function page() {
           <Image src={azulBorde2} width={200} className="flex absolute  bottom-72 right-4" alt='borde de micelania azul 2' />
           <Image src={miceAzul2} width={220} className="flex relative bottom-72 z-[-10] right-0" alt='micelania azul 2' />
         </div>
-        <div className="hidden lg:flex absolute left-0 top-full z-[-10]">
-          <Image src={verdeBorde2} width={400} className="flex relative  top-[550px] left-24" alt='borde de micelania verde 2'/>
-          <Image src={miceVerde2} width={370} className="flex absolute top-[550px] z-[-10] left-28" alt='micelania verde' />
+        <div className="hidden lg:flex absolute left-1/3 top-full z-[-10]">
+          <Image src={verdeBorde2} width={350} className="flex relative  top-[570px] left-1/2" alt='borde de micelania verde 2'/>
+          <Image src={miceVerde2} width={320} className="flex absolute top-[580px] z-[-10] left-1/2" alt='micelania verde' />
         </div>
       </main>
     </>

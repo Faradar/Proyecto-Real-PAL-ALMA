@@ -6,19 +6,27 @@ import "slick-carousel/slick/slick-theme.css";
 
 const CustomPrevArrow = ({ onClick }) => (
   <div
-    className="absolute top-1/2 left-[-100px] cursor-pointer transform -translate-y-1/2 z-10"
+    className="absolute top-[150px] md:top-[175px] lg:top-[200px] 2xl:top-[245px] left-[270px] md:left-[305px] lg:left-[375px] 2xl:left-[-20px] cursor-pointer transform -translate-y-1/2 z-10"
     onClick={onClick}
   >
-    <img src={"./carousel/leftArrow.svg"} alt="Previous" className="w-[32px]" />
+    <img
+      src={"./carousel/leftArrow.svg"}
+      alt="Previous"
+      className="w-[20px] 2xl:w-[30px]"
+    />
   </div>
 );
 
 const CustomNextArrow = ({ onClick }) => (
   <div
-    className="absolute top-1/2 right-[-100px] cursor-pointer transform -translate-y-1/2 z-10"
+    className="absolute top-[150px] md:top-[175px] lg:top-[200px] 2xl:top-[245px] right-[290px] md:right-[305px] lg:right-[390px] 2xl:right-[-20px] cursor-pointer transform -translate-y-1/2 z-10"
     onClick={onClick}
   >
-    <img src={"/carousel/rightArrow.svg"} alt="Next" className="w-[32px]" />
+    <img
+      src={"/carousel/rightArrow.svg"}
+      alt="Next"
+      className="w-[20px] 2xl:w-[30px]"
+    />
   </div>
 );
 
@@ -35,10 +43,11 @@ const Carousel = ({ images }) => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
     focusOnSelect: true,
+    draggable: false,
     centerPadding: "0px",
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
@@ -52,8 +61,8 @@ const Carousel = ({ images }) => {
   };
 
   return (
-    <div className="mt-24 w-[1388px] h-[490px]">
-      <Slider {...settings} className="w-full h-full">
+    <div className="mt-10 w-[804px] h-[336px] md:w-[900px] md:h-[400px] lg:w-[1100px] lg:h-[450px] 2xl:w-[1400px] 2xl:h-[500px]">
+      <Slider {...settings}>
         {images.map((image, index) => {
           let zIndex;
 
@@ -67,39 +76,36 @@ const Carousel = ({ images }) => {
             zIndex = 20;
           } else if (index === rightMostSlideIndex) {
             zIndex = 10;
-          } else {
-            zIndex = 0;
           }
 
           return (
-            <div
-              key={index + 1}
-              className={`w-full relative inline-block z-${zIndex}`}
-            >
-              <div className={`w-full h-full`}>
+            <div key={index + 1}>
+              <div>
                 <img
                   src={image}
                   alt={`Slide ${index + 1}`}
-                  className={`w-[309px] h-[333px] rounded-md border-2 border-white`}
+                  className={`w-[250px] h-[300px] md:w-[300px] md:h-[350px] lg:w-[350px] lg:h-[400px] 2xl:w-[455px] 2xl:h-[490px] rounded-md border-4 border-[#eaf0f4]`}
                   style={{
                     transform: `scale(${
                       index === centerSlideIndex
-                        ? 1.5
+                        ? 1.0
                         : index === leftSlideIndex || index === rightSlideIndex
-                        ? 1.2
-                        : 1.0
+                        ? 0.8
+                        : 0.6
                     }) translateX(${
                       index === leftSlideIndex
-                        ? "20%"
-                        : index === leftMostSlideIndex
                         ? "40%"
+                        : index === leftMostSlideIndex
+                        ? "150%"
                         : index === rightSlideIndex
-                        ? "-20%"
-                        : index === rightMostSlideIndex
                         ? "-40%"
+                        : index === rightMostSlideIndex
+                        ? "-150%"
                         : "0%"
                     })`,
                     transition: "transform 0.5s ease-in-out",
+                    zIndex: zIndex,
+                    position: "relative",
                   }}
                 />
               </div>
@@ -112,31 +118,3 @@ const Carousel = ({ images }) => {
 };
 
 export default Carousel;
-
-//  <div
-//             key={index + 1}
-//             className={`w-full relative inline-block ${
-//               index === centerSlideIndex ? "z-30 center-slide" : "z-0"
-//             } ${index === leftSlideIndex ? "left-slide z-20" : "z-0"} ${
-//               index === leftMostSlideIndex ? "left-most-slide z-10" : "z-0"
-//             } ${index === rightSlideIndex ? "right-slide z-20" : "z-0"} ${
-//               index === rightMostSlideIndex ? "right-most-slide z-10" : "z-0"
-//             }`}
-//           >
-
-// style={{
-//   transform: `scale(${
-//     index === centerSlideIndex
-//       ? 1.5
-//       : index === leftSlideIndex || index === rightSlideIndex
-//       ? 1.2
-//       : 1
-//   }) translateX(${
-//     index === centerSlideIndex
-//       ? "0%"
-//       : index === leftSlideIndex
-//       ? "-20%"
-//       : "20%"
-//   })`,
-//   transition: "transform 0.5s ease-in-out",
-// }}

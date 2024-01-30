@@ -42,8 +42,8 @@ export default function Talleres() {
     return (
       <div >
         <div className="con_magin">
-            <p className="text_talleres">
-            Talleresde arte para niños y adultos, utilizando materiales cotidianos y promoviendo.
+            <p className="text_talleres font-bold">
+            Talleres de arte para niños y adultos, utilizando materiales cotidianos y promoviendo la creatividad.
             </p>
             <div className="modulos ">
                 <div onClick={()=>{cambiarTipo("nino")}} className="modulo cursor-pointer">
@@ -55,15 +55,16 @@ export default function Talleres() {
             </div>
             <div className="descrption_talleres">
                     <div className="descrption_taller">
-                        <h2 className="text-center mb-5 font-bold ">Descripción del taller</h2>
+                        <h2 className=" mb-5 font-bold ">¿Porqué lo hacemos?</h2>
                         <p className="lg:text-base">
-                        Creamos este espacio para fomentar la creatividad y el juego en los niños, enseñándoles a hacer arte con materiales que se encuentran en cualquier casa, generando conciencia de reutilizar , reciclar y resignificar materiales a través de distintas técnicas.
+                        Es nuestro deseo abrir las puertas de nuestro taller a quienes desean expresar y encontrar un momento ligado a la creatividad, un momento de esparcimiento, un recreo de la rutina de nuestros días. 
                         </p>
                     </div>
                     <div className="descrption_taller">
-                        <h2 className="text-center mb-5 font-bold ">¿Qué aprenderán?</h2>
+                        <h2 className=" mb-5 font-bold ">¿Qué aprenderán?</h2>
                         <p className="lg:text-base">
-                            A encontrar espacios de sociabilización con sus pares, mediante actividades lúdicas ligadas a las artes plásticas , el aprendizaje de técnicas y el conocimiento de conceptos y curiosidades de distintos artistas. 
+                        Desde Pa’l alma queremos motivarlos a: <br/><br/>
+                        Proponemos ir descubriendo entre líneas , garabatos , mándalas , colores, técnicas  donde nos sentimos más cómodos y donde nos encontramos en calma y conectados con nuestra alma.
                         </p>
                     </div>
                 </div>
