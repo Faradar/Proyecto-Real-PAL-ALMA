@@ -107,7 +107,7 @@ function page() {
             taller pa'l alma
           </h3>
           <ul>
-            <li className=" lg:w-3/4 lg:text-lg">Dirección: <a href="">Duarte Quirós 5223 - B° Lomas del Suquia - Casa interna 226</a></li>
+            <li className=" lg:w-3/4 lg:text-lg">Dirección: Duarte Quirós 5223 - B° Lomas del Suquia - Casa interna 226</li>
             <li className=" lg:text-lg">Localidad: Cordoba capital - CP 5003</li>
             <li className="lg:w-3/4 lg:text-lg">HORARIO DE CONSULTA:</li>
             <li className="lg:w-3/4 lg:text-lg">9 a 12:30 hs</li>
