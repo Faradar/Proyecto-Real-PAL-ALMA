@@ -1,27 +1,22 @@
 .primary{
     padding: 0px 220px ;
 }
-.point{
-    padding: 75px;
-}
-.point-text{
-    padding-top: 50px;
-    padding-left: 120px;
-}
+
 .img1{
     top: 55px;
 }
 .img-third{
-    top: 1261px;
+    top: 1161px;
 }
 .img-thirdFon{
-    top: 1333px;
+    top: 1233px;
 }
 .img-fourth{
-    top: 1246px;
+    top: 946px;
     right: 0px;
 }
 .img-fourthFon{
-   top: 1258px;
-   right: 0px; 
+    top: 958px;
+    right: 0px; 
 }
+

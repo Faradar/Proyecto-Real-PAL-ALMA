@@ -12,6 +12,15 @@ module.exports = {
     extend: {
       zIndex: {
         'bg': '-100',
+      },
+      backgroundColor: {
+        'eaf0f4': '#EAF0F4',
+      },
+      width: {
+        '600': '600px',
+      },
+      maxWidth: {
+        '600': '600px',
       }
     },
   },

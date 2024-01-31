@@ -2,8 +2,6 @@
 import { useState } from "react";
 import axios from "axios";
 import { FiSend } from "react-icons/fi";
-import ReCAPTCHA from "react-google-recaptcha";
-// 6LdFziQpAAAAAGhXSwnACFKslGmlJSRwanLe9VqB
 
 import dynamic from 'next/dynamic'
 
@@ -25,7 +23,6 @@ function Form() {
       .toLowerCase()
       .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
   };
-  const [capVal, setCapVal] = useState(null)
 
   const handleName = (e) => {
     setClientName(e.target.value);
@@ -87,7 +84,7 @@ function Form() {
   };
 
   return (
-    <section className="w-10/12 md:w-8/12 mx-auto mt-10">
+    <section className="w-10/12 md:w-3/5 mx-auto lg:mt-32">
       {successMsg ? (
         <p className="text-center text-xl font-bold p-20">
           {successMsg}
@@ -101,77 +98,76 @@ function Form() {
         >
           <div className="w-full flex flex-col gap-4 justify-between">
             <div>
-              <label htmlFor="clientName" className="ml-2 text-lg">Nombre</label>
+              <label htmlFor="clientName" className="ml-2 text-lg font-bold">Nombre</label>
               <input
                 required
                 onChange={handleName}
                 value={clientName}
                 className={`${errClientName
                   ? "border-red-600 focus-visible:border-red-600"
-                  : "border-zinc-600 "
-                  } w-full bg-transparent border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-300`}
+                  : "border-zinc-300/30 "
+                  } w-full bg-slate-100/90 border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-400`}
                 type="text"
-                placeholder={"Nombre"}
+                
               />
             </div>
             <div>
-              <label htmlFor="clientLastname" className="ml-2 text-lg">Apellido</label>
+              <label htmlFor="clientLastname" className="ml-2 text-lg font-bold">Apellido</label>
               <input
                 required
                 onChange={handleLastname}
                 value={clientLastname}
                 className={`${errClientLastname
                   ? "border-red-600 focus-visible:border-red-600"
-                  : "border-zinc-600 "
-                  } w-full bg-transparent border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-300`}
+                  : "border-zinc-300/30 "
+                  } w-full bg-slate-100/90 border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-300`}
                 type="text"
-                placeholder={"Apellido"}
+                
               />
             </div>
             <div>
-              <label htmlFor="email" className="ml-2 text-lg">Mail</label>
+              <label htmlFor="email" className="ml-2 text-lg font-bold">Mail</label>
               <input
                 required
                 onChange={handleEmail}
                 value={email}
                 className={`${errEmail
                   ? "border-red-600 focus-visible:border-red-600"
-                  : "border-zinc-600 "
-                  } w-full bg-transparent border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-300`}
+                  : "border-zinc-300/30 "
+                  } w-full bg-slate-100/90 border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-300`}
                 type="email"
-                placeholder={"Mail"}
+                
               />
             </div>
             <div>
-              <label htmlFor="phone" className="ml-2 text-lg">Teléfono</label>
+              <label htmlFor="phone" className="ml-2 text-lg font-bold">Teléfono</label>
               <input
                 required
                 onChange={handlePhone}
                 value={phone}
                 className={`${errPhone
                   ? "border-red-600 focus-visible:border-red-600"
-                  : "border-zinc-600 "
-                  } w-full bg-transparent border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-300`}
+                  : "border-zinc-300/30 "
+                  } w-full bg-slate-100/90 border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-300`}
                 type="text"
-                placeholder={"Teléfono"}
+                
               />
             </div>
           </div>
-          <div className="md:mt-6">
+          <div className="">
+            <label htmlFor="messages" className="text-lg font-bold ml-2">Dejanos tu consulta</label>
             <textarea
               required
               onChange={handleMessages}
               value={messages}
               className={`${errMessages
                 ? "border-red-600 focus-visible:border-red-600"
-                : "border-zinc-600 "
-                } w-full bg-transparent border-2 rounded-2xl px-4 py-2 text-base text-gray-600 outline-none duration-300 resize-none`}
-              placeholder={"Dejá acá tu consulta"}
+                : "border-zinc-300/30 "
+                } w-full bg-slate-100/90 border-2 rounded-2xl px-4 py-2 text-base text-gray-600 outline-none duration-300 resize-none`}
               rows="8"
             ></textarea>
             <div className="flex flex-col mt-6 md:flex-row justify-center text-center align-middle">
-              <ReCAPTCHA sitekey="6LdFziQpAAAAAGhXSwnACFKslGmlJSRwanLe9VqB" onChange={val => setCapVal(val)} className="justify-center" />
-              <button className="border-2 rounded-2xl border-orange-500 bg-orange-500 flex justify-center text-center mt-2 md:mt-0 md:ml-4 md:w-full text-xl md:text-2xl lg:text-3xl py-2 md:py-6 transition duration-150 hover:bg-orange-600 hover:ease-linear" disabled={!capVal} onClick={handleSend}>Enviar <span><FiSend /></span> </button>
+              <button className="border-2 rounded-2xl border-orange-500 bg-orange-500 flex justify-center text-center mt-2 md:mt-0 md:w-full text-xl md:text-2xl lg:text-3xl py-2 md:py-6 transition duration-150 hover:bg-orange-600 hover:ease-linear text-white" onClick={handleSend}>ENVIAR MENSAJE</button>
             </div>
           </div>
         </form>
