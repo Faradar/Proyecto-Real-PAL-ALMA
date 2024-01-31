@@ -409,9 +409,9 @@ export default function Talleres() {
           <div className="flex items-center justify-center mb-10 relative">
             <div
               onClick={handlePrevPage}
-              className="absolute left-4 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer hover:text-gray-500"
+              className="absolute left-4 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
             >
-              <span className="text-3xl">&lt;-</span>
+              <span className="text-3xl">&lt;</span>
             </div>
 
             <div className="relative z-[-3]  w-95 ">
@@ -424,9 +424,9 @@ export default function Talleres() {
 
             <div
               onClick={handleNextPage}
-              className="absolute right-4 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer hover:text-gray-500"
+              className="absolute right-4 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
             >
-              <span className="text-3xl">-&gt;</span>
+              <span className="text-3xl">&gt;</span>
             </div>
           </div>
           <div className="w-95 grid grid-cols-5 md:w-100  gap-8  justify-center mx-auto   ">
