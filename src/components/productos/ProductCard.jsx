@@ -44,9 +44,9 @@ const ProductCard = ({
       {isHovered && (
         <div
           className="absolute bg-[#d9d9d9] sm:bg-[#eaf0f4] z-10 rounded"
-          style={{ top: `calc(${topOffset}px)` }}
+          style={{ top: `calc(${topOffset - 2}px)` }}
         >
-          <p className="text-center pt-2">{additionalText}</p>
+          <p className="text-center py-4">{additionalText}</p>
         </div>
       )}
     </div>
