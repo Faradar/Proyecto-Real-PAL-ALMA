@@ -1,113 +1,189 @@
+"use client";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Carousel from "@/components/carousel/Carousel";
+import logo from "../../public/contacto/logo.svg";
+import HomeCardList from "@/components/home/HomeCardList";
+import taza from "../../public/inicio/tazaDienteDeLeon.jpg";
+import llavero from "../../public/inicio/llaveroLechuza.jpg";
+import calcomanias from "../../public/inicio/Calcomanias.jpg";
+import botella from "../../public/inicio/botellaMariposa.jpg";
+import talleres1 from "../../public/inicio/talleres1.jpg";
+import talleres2 from "../../public/inicio/talleres2.jpg";
+import talleres3 from "../../public/inicio/talleres3.jpg";
+import talleres4 from "../../public/inicio/talleres4.jpg";
+import miceMarron from "../../public/inicio/miceMarronHome.svg";
+import marronBorde from "../../public/inicio/marronBordeHome.svg";
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+  const [isMd, setIsMd] = useState(false);
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+  useEffect(() => {
+    const mdMediaQuery = window.matchMedia("(min-width: 768px)");
+    setIsMd(mdMediaQuery.matches);
+
+    const handleResize = () => {
+      setIsMd(mdMediaQuery.matches);
+    };
+
+    mdMediaQuery.addEventListener("change", handleResize);
+
+    return () => {
+      mdMediaQuery.removeEventListener("change", handleResize);
+    };
+  }, []);
+
+  const miscRightColor = isMd
+    ? "/inicio/misc-color-right.svg"
+    : "/inicio/misc-color-right-mobile.svg";
+
+  const miscRightOutline = isMd
+    ? "/inicio/misc-outline-right.svg"
+    : "/inicio/misc-outline-right-mobile.svg";
+
+  const carouselImages = [
+    "/inicio/carousel3.jpg",
+    "/inicio/carousel4.jpg",
+    "/inicio/carousel5.jpg",
+    "/inicio/carousel1.jpg",
+    "/inicio/carousel2.jpg",
+  ];
+
+  const productos = [
+    { src: llavero, title: "Llavero rectangular Lechuza vizcachera" },
+    { src: taza, title: "Taza cerámica, diseño con Dientes de León" },
+    { src: calcomanias, title: "Calcamonías Flora autóctona" },
+    { src: botella, title: "Botella con diseño de Mariposa" },
+  ];
+
+  const talleres = [
+    {
+      src: talleres1,
+      title:
+        "Enseñar que se puede hacer arte con lo cotidiano, con lo que tenemos a nuestro alrededor.",
+    },
+    {
+      src: talleres2,
+      title:
+        "Espacio para conectarte con tu interior y donde se tenga la posibilidad de expresar las emociones a través del arte.",
+    },
+    {
+      src: talleres3,
+      title:
+        "Introducir el concepto de reutilización y reciclado a través del ARTE.",
+    },
+    {
+      src: talleres4,
+      title:
+        "Talleres de arte para niños y adultos, utilizando materiales cotidianos y promoviendo.",
+    },
+  ];
+
+  return (
+    <main>
+      <section className="grid grid-cols-12 justify-center bg-slate-700/10 shadow-[0_6px_6px_-1px_rgba(0,0,0,0.3)] overflow-hidden relative">
+        <div className="w-32 md:w-44 lg:w-64 2xl:w-72 grid z-10 2xl:translate-y-[-10px]">
+          <Image
+            src="/inicio/misc-outline-left.svg"
+            width={80}
+            height={200}
+            alt="borde micelania amarrila"
+            className="md:w-40 lg:w-52 2xl:w-[260px] 2xl:translate-y-[-10px]"
+          />
+          <div className="grid absolute">
+            <Image
+              src="/inicio/misc-color-left.svg"
+              width={70}
+              height={200}
+              alt="micelania amarilla"
+              className="md:w-36 lg:w-48 2xl:w-[250px] 2xl:translate-x-[-10px]"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col text-center w-full col-span-10 relative mx-0 px-0">
+          <h1 className="font-semibold md:text-[32px] md:mt-6">Bienvenidos!</h1>
+          <Image
+            src={logo}
+            width={182}
+            height={200}
+            className="mx-auto max-w-[920px] md:w-11/12 md:mt-[-20px] lg:w-12/12"
+            alt="logo de pa'l alma grande"
+          />
+          <p className="text-xs sm:text-sm md:text-xl font-semibold py-2 w-64 max-w-[920px] min-[530px]:w-auto mx-auto">
+            “En el corazón de “Pa'l alma” late el amor por la diversidad
+            biológica de Argentina. Nuestros productos son una manifestación de
+            esta pasión, capturando la esencia única de la flora y fauna que nos
+            rodea.”
+          </p>
+        </div>
+        <div className="w-28 md:w-48 lg:w-64 2xl:w-96 grid justify-items-end absolute top-[-20px] md:top-[-50px] lg:top-[-70px] 2xl:top-[-110px] right-[-1px]">
+          <Image
+            src={miscRightColor}
+            width={70}
+            height={200}
+            alt="borde de micelania azul 3"
+            className="md:w-[300px] lg:w-[400px] 2xl:w-[500px]"
+          />
+          <div className="w-24 md:w-48 lg:w-64 2xl:w-96 grid justify-items-end relative bottom-[200px] md:bottom-[280px] lg:bottom-[370px] 2xl:bottom-[560px] right-0">
+            <Image
+              src={miscRightOutline}
+              width={65}
+              height={200}
+              alt="micelania azul"
+              className="md:w-[300px] 2xl:w-[500px]"
+            />
+          </div>
+        </div>
+      </section>
+      <div className="flex items-center justify-center overflow-hidden mb-10">
+        <Carousel images={carouselImages} />
+      </div>
+      <div className="absolute right-0 top-full min-[540px]:top-[600px] md:top-[900px] lg:top-[1100px] xl:top-[1300px] 2xl:top-[1000px] z-[-10]">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          src={marronBorde}
+          width={450}
+          height={450}
+          className="flex absolute top-24 right-4"
+          alt="borde de micelania marron"
+        />
+        <Image
+          src={miceMarron}
+          width={450}
+          height={450}
+          className="flex relative top-24 z-[-10] right-0"
+          alt="micelania marron"
         />
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="absolute left-0 top-[2000px] min-[540px]:top-[1300px] md:top-[1800px] lg:top-[2000px] xl:top-[2200px] 2xl:top-[1500px] z-[-10]">
+        <Image
+          src="/inicio/misc-outline-green.svg"
+          width={300}
+          height={300}
+          className="flex absolute top-24 right-4"
+          alt="borde de micelania verde"
+        />
+        <Image
+          src="/inicio/misc-color-green.svg"
+          width={300}
+          height={300}
+          className="flex relative top-24 left-[0px] z-[-10]"
+          alt="micelania verde"
+        />
       </div>
+      <section className="w-11/12 m-auto 2xl:mr-[90px] mb-10">
+        <h2 className="pl-8 font-bold text-center lg:text-xl 2xl:text-left">
+          Algunos de nuestros productos:
+        </h2>
+        <div className="mx-auto grid 2xl:gap-x-16 grid-cols-1 min-[540px]:grid-cols-2 2xl:grid-cols-4">
+          <HomeCardList data={productos} linkHref="/productos" />
+        </div>
+        <h2 className="pl-8 font-bold text-center lg:text-xl 2xl:text-left mt-10">
+          Algunos de nuestros talleres:
+        </h2>
+        <div className="mx-auto grid 2xl:gap-x-16 grid-cols-1 min-[540px]:grid-cols-2 2xl:grid-cols-4">
+          <HomeCardList data={talleres} linkHref="/talleres" />
+        </div>
+      </section>
     </main>
   );
 }
