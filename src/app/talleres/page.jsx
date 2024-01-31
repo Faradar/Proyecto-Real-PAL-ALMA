@@ -45,28 +45,29 @@ export default function Talleres() {
           Talleres de arte para niños y adultos, utilizando materiales
           cotidianos y promoviendo la creatividad.
         </p>
-        <div className="grid grid-cols-2 text-left">
-          <div className="modulos  xl:ml-150">
-            <div
-              onClick={() => {
-                cambiarTipo("nino");
-              }}
-              className="modulo cursor-pointer"
-            >
-              <div className="modulo1"></div>
-            </div>
-            <div
-              onClick={() => {
-                cambiarTipo("adulto");
-              }}
-              className="modulo cursor-pointer"
-            >
-              <div className="modulo2"></div>
-            </div>
-          </div>
-          <div></div>
-        </div>
       </div>
+      <div className="grid grid-cols-2 ml-2 max-w-[1040px] lg:mx-auto">
+        <div className="modulos ml-2 mr-auto">
+          <div
+            onClick={() => {
+              cambiarTipo("nino");
+            }}
+            className="modulo cursor-pointer"
+          >
+            <div className="modulo1"></div>
+          </div>
+          <div
+            onClick={() => {
+              cambiarTipo("adulto");
+            }}
+            className="modulo cursor-pointer"
+          >
+            <div className="modulo2"></div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+
       {type === "nino" ? (
         <div>
           <div className="relative md:hidden">
@@ -170,7 +171,7 @@ export default function Talleres() {
           <div className="flex items-center justify-center mb-5 relative">
             <div
               onClick={handlePrevPage}
-              className="absolute left-20 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
+              className="absolute left-4 md:left-20 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
             >
               <span className="text-3xl">&lt;</span>
             </div>
@@ -185,12 +186,12 @@ export default function Talleres() {
 
             <div
               onClick={handleNextPage}
-              className="absolute right-20 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
+              className="absolute right-4 md:right-20 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
             >
               <span className="text-3xl">&gt;</span>
             </div>
           </div>
-          <div className="w-95 grid grid-cols-5 md:w-100  gap-1 md:gap-8  justify-center mx-auto ">
+          <div className="w-95 grid grid-cols-5 md:w-100 gap-1 md:gap-8 justify-center mx-auto">
             <img
               onClick={() => cambiarValor(1)}
               className={`imgGaleria mx-auto ${page === 1 ? "select" : ""}`}
@@ -406,30 +407,30 @@ export default function Talleres() {
             Galería de imágenes de los talleres
           </p>
 
-          <div className="flex items-center justify-center mb-10 relative">
+          <div className="flex items-center justify-center mb-5 relative">
             <div
               onClick={handlePrevPage}
-              className="absolute left-4 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer hover:text-gray-500"
+              className="absolute left-4 md:left-20 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
             >
-              <span className="text-3xl">&lt;-</span>
+              <span className="text-3xl">&lt;</span>
             </div>
 
             <div className="relative z-[-3]  w-95 ">
               <img
                 src={`img/Talleresadultos${page}.png`}
                 alt="Imagen"
-                className="object-cover object-center mx-auto w-95 h-650"
+                className="object-cover object-center mx-auto w-95 md:w-80 h-300 md:h-650"
               />
             </div>
 
             <div
               onClick={handleNextPage}
-              className="absolute right-4 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer hover:text-gray-500"
+              className="absolute right-4 md:right-20 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
             >
-              <span className="text-3xl">-&gt;</span>
+              <span className="text-3xl">&gt;</span>
             </div>
           </div>
-          <div className="w-95 grid grid-cols-5 md:w-100  gap-8  justify-center mx-auto   ">
+          <div className="w-95 grid grid-cols-5 md:w-100 gap-1 md:gap-8 justify-center mx-auto">
             <img
               onClick={() => cambiarValor(1)}
               className={`imgGaleria mx-auto ${page === 1 ? "select" : ""}`}

@@ -60,14 +60,14 @@ function page() {
       <div className="md:hidden absolute right-0 top-10 z-[-10]">
         <Image
           src={verdeBorde}
-          width={130}
-          className="flex relative top-56 right-0"
+          width={150}
+          className="flex relative top-48 right-0"
           alt="borde de micelania verde"
         />
         <Image
           src={miceVerde}
           width={110}
-          className="flex absolute right-0"
+          className="flex absolute translate-y-0 right-0"
           alt="micelania verde"
         />
       </div>

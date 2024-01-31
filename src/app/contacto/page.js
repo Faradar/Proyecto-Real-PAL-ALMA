@@ -47,7 +47,7 @@ function page() {
           </div>
         </div>
       </section>
-      <p className="flex justify-center text-lg lg:text-2xl m-6 font-bold">
+      <p className="flex justify-center text-base md:text-xl lg:text-2xl m-6 font-bold">
         Pa'l alma tiene su casa en Córdoba Capital, Argentina
       </p>
       <div className="w-full hidden xl:flex absolute -z-10">
@@ -156,8 +156,7 @@ function page() {
               <Link
                 href="https://www.google.com/maps/place/Duarte+Quir%C3%B3s+5223,+C%C3%B3rdoba/@-31.3975708,-64.2500876,18.45z/data=!4m5!3m4!1s0x94329f31a7ca4715:0x291541482743d8d3!8m2!3d-31.397304!4d-64.2502643?entry=ttu"
                 target="blank"
-                className="flex lg:hidden bg-orange-500 w-36 mx-auto p-2 mt-3 rounded-lg text-white justify-center text-xl font-bold transition duration-150 hover:bg-orange-600 hover:ease-linear"
-              >
+                className="flex lg:hidden bg-orange-500 w-36 mx-auto p-2 mt-3 rounded-lg text-white justify-center text-xl font-bold transition duration-150 hover:bg-orange-600 hover:ease-linear">
                 Ver Mapa
               </Link>
             </li>

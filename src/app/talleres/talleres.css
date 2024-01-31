@@ -121,7 +121,7 @@
 .imgGaleria {
   border-radius: 5px;
   min-width: 60px;
-  min-height: 50px;
+  height: 70px;
 }
 @media (min-width: 760px) {
   .imgGaleria {
