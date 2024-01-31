@@ -96,7 +96,7 @@ export default function Home() {
               width={70}
               height={200}
               alt="micelania amarilla"
-              className="md:w-36 lg:w-48 2xl:w-[250px] 2xl:translate-x-[-10px]"
+              className=" translate-y-3 md:w-36 lg:w-48 2xl:w-[250px] 2xl:translate-x-[-10px]"
             />
           </div>
         </div>
