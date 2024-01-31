@@ -82,7 +82,7 @@ export default function productos() {
   ];
 
   return (
-    <div>
+    <div className="overflow-hidden">
       {/* <div class="relative z-[-99]">
                 <div class="absolute img1">
                     <img  src="/img/productos/first.svg" alt="Fondo1" />
