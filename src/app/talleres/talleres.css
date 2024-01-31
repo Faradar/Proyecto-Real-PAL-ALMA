@@ -11,7 +11,7 @@
 .text_talleres{
     text-align: center;
     max-width: 400px;
-    margin: 10px auto;
+    margin: 50px auto;
     font-size: 14px;
 }
 @media (min-width: 760px) {
@@ -36,6 +36,9 @@
 }
 .modulo{
     padding-top: 15px;
+}
+.modulo:hover{
+    opacity: 50%;
 }
 .modulo1{
     background-image: url('/img/ninos.svg'); /* Reemplaza 'tu_imagen.jpg' con la ruta de tu imagen */
@@ -71,11 +74,10 @@
 }
 .descrption_taller{
     max-width: 507px;
-    max-height: 200px;
     text-align: left;
     padding: 10px;
     background-color: #D9D9D9;
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 12px;
 }
 
@@ -83,7 +85,6 @@
     .descrption_taller{
         min-width: 400px;
         min-height: 271px;
-        border-radius: 0px;
     }
 }
 .con_talleres_img{
@@ -93,7 +94,7 @@
 }
 .texttalleres{
     max-width: 1440px;
-    margin: 0px 50px;
+    margin: 50px 200px;
 }
 .talleres_img{
     width: 163.14px;
@@ -124,13 +125,18 @@
 }
 
 .imgGaleria{
-    max-width: 240px;
-    max-height: 108px;
-    border-radius: 8px;
+    border-radius: 5px;
+    min-height: 75px;
+}
+@media (min-width: 760px) {
+    .imgGaleria{
+        border-radius: 5px;
+        height: 140px;
+    }
 }
 .select{
     background-color: rgb(185, 180, 180);
-    padding: 5px;
+    padding: 2.5px;
 }
 
 .coment{

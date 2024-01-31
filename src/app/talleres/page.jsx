@@ -12,7 +12,7 @@ export default function Talleres() {
 
     useEffect(()=>{
         let int = setInterval(() => {
-            setPage(prev =>((prev+1)>= 5 ? 1: prev + 1))
+            setPage(prev =>((prev+1)>= 6 ? 1: prev + 1))
         }, 5000);
 
         return()=> clearInterval(int);
@@ -42,55 +42,62 @@ export default function Talleres() {
     return (
       <div >
         <div className="con_magin">
-            <p className="text_talleres font-bold">
+            <p className="text_talleres font-bold mt-20">
             Talleres de arte para niños y adultos, utilizando materiales cotidianos y promoviendo la creatividad.
             </p>
-            <div className="modulos ">
-                <div onClick={()=>{cambiarTipo("nino")}} className="modulo cursor-pointer">
-                    <div className="modulo1"></div>
+            <div className="grid grid-cols-2 text-left">
+                <div className="modulos  xl:ml-150">
+                    <div onClick={()=>{cambiarTipo("nino")}} className="modulo cursor-pointer">
+                        <div className="modulo1"></div>
+                    </div>
+                    <div onClick={()=>{cambiarTipo("adulto")}} className="modulo cursor-pointer">
+                        <div className="modulo2"></div>
+                    </div>
                 </div>
-                <div onClick={()=>{cambiarTipo("adulto")}} className="modulo cursor-pointer">
-                    <div className="modulo2"></div>
+                <div>
+
                 </div>
             </div>
+            
+        </div>
+        {type==='nino' ? 
+        <div>
             <div className="descrption_talleres">
                     <div className="descrption_taller">
                         <h2 className=" mb-5 font-bold ">¿Porqué lo hacemos?</h2>
                         <p className="lg:text-base">
-                        Es nuestro deseo abrir las puertas de nuestro taller a quienes desean expresar y encontrar un momento ligado a la creatividad, un momento de esparcimiento, un recreo de la rutina de nuestros días. 
+                        Creamos este espacio para fomentar la creatividad y el juego en los niños, enseñándoles a hacer arte con materiales que se encuentran en cualquier casa, generando conciencia de reutilizar , reciclar y resignificar materiales a través de distintas técnicas.
                         </p>
                     </div>
                     <div className="descrption_taller">
                         <h2 className=" mb-5 font-bold ">¿Qué aprenderán?</h2>
                         <p className="lg:text-base">
                         Desde Pa’l alma queremos motivarlos a: <br/><br/>
-                        Proponemos ir descubriendo entre líneas , garabatos , mándalas , colores, técnicas  donde nos sentimos más cómodos y donde nos encontramos en calma y conectados con nuestra alma.
+                        Encontrar espacios de sociabilización con sus pares, mediante actividades lúdicas ligadas a las artes plásticas , el aprendizaje de técnicas y el conocimiento de conceptos y curiosidades de distintos artistas. 
+
                         </p>
                     </div>
                 </div>
-        </div>
-        {type==='nino' ? 
-        <div>
             <p className="font-bold  texttalleres">Galería de imágenes de los talleres</p>
 
 
-            <div className="flex items-center justify-center mb-10 relative"> 
+            <div className="flex items-center justify-center mb-5 relative"> 
 
-                    <div onClick={handlePrevPage} className="absolute left-4 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer hover:text-gray-500">
-                        <span className="text-3xl">&lt;-</span>
+                    <div onClick={handlePrevPage} className="absolute left-20 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold">
+                        <span className="text-3xl">&lt;</span>
                     </div>
 
                 
                     <div className="relative z-[-3]  w-95 ">
-                        <img src={`img/Talleresnino${page}.png`} alt="Imagen" className="object-cover object-center mx-auto w-95 h-650"/>
+                        <img src={`img/Talleresnino${page}.png`} alt="Imagen" className="object-cover object-center mx-auto w-95 md:w-80 h-300 md:h-650"/>
                     </div>
 
                 
-                    <div onClick={handleNextPage} className="absolute right-4 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer hover:text-gray-500">
-                        <span className="text-3xl">-&gt;</span>
+                    <div onClick={handleNextPage} className="absolute right-20 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold">
+                        <span className="text-3xl">&gt;</span>
                     </div>
             </div>
-            <div className=" w-95 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8  justify-center mx-auto ">
+            <div className=" w-95 grid grid-cols-5 md:w-100  gap-1 md:gap-8  justify-center mx-auto ">
                 <img onClick={()=>cambiarValor(1)} className={`imgGaleria mx-auto ${page===1 ? 'select' : ''}`} src="img/Talleresnino1.png" alt="Talleres nino 1" />
                 <img onClick={()=>cambiarValor(2)} className={`imgGaleria mx-auto ${page===2 ? 'select' : ''}`} src="img/Talleresnino2.png" alt="Talleres nino 2" />
                 <img onClick={()=>cambiarValor(3)} className={`imgGaleria mx-auto ${page===3 ? 'select' : ''}`} src="img/Talleresnino3.png" alt="Talleres nino 3" />
@@ -98,7 +105,7 @@ export default function Talleres() {
                 <img onClick={()=>cambiarValor(5)} className={`imgGaleria mx-auto ${page===5 ? 'select' : ''}`} src="img/Talleresnino5.png" alt="Talleres nino 5" />
             </div>
 
-            <div className="flex items-center justify-center mb-10 relative"> 
+            <div className="hidden md:flex items-center justify-center mb-10 relative"> 
 
                     <div onClick={handlePrevComent} className="absolute left-4 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600  hover:text-orange-500 font-bold">
                         <span className="text-3xl">&lt;</span>
@@ -147,10 +154,25 @@ export default function Talleres() {
                     </div>
             </div>
             
-            <p className="text-center font-bold mt-10">“El arte es un medio que siempre nos ayuda a expresar lo que sentimos”.</p>
+            <p className="hidden md:block text-center font-bold mt-10">“El arte es un medio que siempre nos ayuda a expresar lo que sentimos”.</p>
         </div>
         :
         <div>
+            <div className="descrption_talleres">
+                    <div className="descrption_taller">
+                        <h2 className=" mb-5 font-bold ">¿Porqué lo hacemos?</h2>
+                        <p className="lg:text-base">
+                        Es nuestro deseo abrir las puertas de nuestro taller a quienes desean expresar y encontrar un momento ligado a la creatividad, un momento de esparcimiento, un recreo de la rutina de nuestros días. 
+                        </p>
+                    </div>
+                    <div className="descrption_taller">
+                        <h2 className=" mb-5 font-bold ">¿Qué aprenderán?</h2>
+                        <p className="lg:text-base">
+                        Desde Pa’l alma queremos motivarlos a: <br/><br/>
+                        Proponemos ir descubriendo entre líneas , garabatos , mándalas , colores, técnicas  donde nos sentimos más cómodos y donde nos encontramos en calma y conectados con nuestra alma.
+                        </p>
+                    </div>
+                </div>
             <p className="font-bold  texttalleres">Galería de imágenes de los talleres</p>
 
 
@@ -170,7 +192,7 @@ export default function Talleres() {
                         <span className="text-3xl">-&gt;</span>
                     </div>
             </div>
-            <div className=" w-95 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8  justify-center mx-auto ">
+            <div className="w-95 grid grid-cols-5 md:w-100  gap-8  justify-center mx-auto   ">
                 <img onClick={()=>cambiarValor(1)} className={`imgGaleria mx-auto ${page===1 ? 'select' : ''}`} src="img/Talleresadultos1.png" alt="Talleres nino 1" />
                 <img onClick={()=>cambiarValor(2)} className={`imgGaleria mx-auto ${page===2 ? 'select' : ''}`} src="img/Talleresadultos2.png" alt="Talleres nino 2" />
                 <img onClick={()=>cambiarValor(3)} className={`imgGaleria mx-auto ${page===3 ? 'select' : ''}`} src="img/Talleresadultos3.png" alt="Talleres nino 3" />
@@ -178,7 +200,7 @@ export default function Talleres() {
                 <img onClick={()=>cambiarValor(5)} className={`imgGaleria mx-auto ${page===5 ? 'select' : ''}`} src="img/Talleresadultos5.png" alt="Talleres nino 5" />
             </div>
             
-            <p className="text-center font-bold mt-10">“El arte nos da la posibilidad de conocer mejor y descubrir aquello de lo que somos capaces”.</p>
+            <p className=" hidden md:block text-center font-bold mt-10">“El arte nos da la posibilidad de conocer mejor y descubrir aquello de lo que somos capaces”.</p>
         </div>
         }
           
