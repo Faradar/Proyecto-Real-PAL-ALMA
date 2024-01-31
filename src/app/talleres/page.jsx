@@ -190,7 +190,7 @@ export default function Talleres() {
               <span className="text-3xl">&gt;</span>
             </div>
           </div>
-          <div className="w-95 grid grid-cols-5 md:w-100  gap-1 md:gap-8  justify-center mx-auto ">
+          <div className="w-95 grid grid-cols-5 md:w-100 gap-1 md:gap-8 justify-center mx-auto">
             <img
               onClick={() => cambiarValor(1)}
               className={`imgGaleria mx-auto ${page === 1 ? "select" : ""}`}
@@ -406,10 +406,10 @@ export default function Talleres() {
             Galería de imágenes de los talleres
           </p>
 
-          <div className="flex items-center justify-center mb-10 relative">
+          <div className="flex items-center justify-center mb-5 relative">
             <div
               onClick={handlePrevPage}
-              className="absolute left-4 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
+              className="absolute left-20 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
             >
               <span className="text-3xl">&lt;</span>
             </div>
@@ -424,12 +424,12 @@ export default function Talleres() {
 
             <div
               onClick={handleNextPage}
-              className="absolute right-4 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
+              className="absolute right-20 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
             >
               <span className="text-3xl">&gt;</span>
             </div>
           </div>
-          <div className="w-95 grid grid-cols-5 md:w-100  gap-8  justify-center mx-auto   ">
+          <div className="w-95 grid grid-cols-5 md:w-100 gap-1 md:gap-8 justify-center mx-auto">
             <img
               onClick={() => cambiarValor(1)}
               className={`imgGaleria mx-auto ${page === 1 ? "select" : ""}`}
