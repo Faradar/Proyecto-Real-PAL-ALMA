@@ -70,8 +70,9 @@
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 562px) {
   .footer {
+    display: none;
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: "copyR copyR logoF redes redes";
     align-items: center;
