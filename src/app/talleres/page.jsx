@@ -418,7 +418,7 @@ export default function Talleres() {
               <img
                 src={`img/Talleresadultos${page}.png`}
                 alt="Imagen"
-                className="object-cover object-center mx-auto w-95 h-650"
+                className="object-cover object-center mx-auto w-95 md:w-80 h-300 md:h-650"
               />
             </div>
 
