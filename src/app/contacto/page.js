@@ -110,7 +110,7 @@ function page() {
             <li className=" lg:text-lg">Localidad: Cordoba capital - CP 5003</li>
             <li className="lg:w-3/4 lg:text-lg">HORARIO DE CONSULTA:</li>
             <li className="lg:w-3/4 lg:text-lg">9 a 12:30 hs</li>
-            <li className="relative left-40 bottom-14"><Link href="https://www.google.com/maps/place/Duarte+Quir%C3%B3s+5223,+C%C3%B3rdoba/@-31.3975708,-64.2500876,18.45z/data=!4m5!3m4!1s0x94329f31a7ca4715:0x291541482743d8d3!8m2!3d-31.397304!4d-64.2502643?entry=ttu" target="blank" className="flex lg:hidden bg-orange-500 w-36 mx-auto p-2 mt-3 rounded-lg text-white justify-center text-xl font-bold">Ver Mapa</Link></li>
+            <li className="relative left-40 bottom-14"><Link href="https://www.google.com/maps/place/Duarte+Quir%C3%B3s+5223,+C%C3%B3rdoba/@-31.3975708,-64.2500876,18.45z/data=!4m5!3m4!1s0x94329f31a7ca4715:0x291541482743d8d3!8m2!3d-31.397304!4d-64.2502643?entry=ttu" target="blank" className="flex lg:hidden bg-orange-500 hover:bg-orange-600 hover:ease-linear w-36 mx-auto p-2 mt-3 rounded-lg text-white justify-center text-xl font-bold">Ver Mapa</Link></li>
           </ul>
         </div>
       </section>
