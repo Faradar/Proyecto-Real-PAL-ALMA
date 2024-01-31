@@ -47,7 +47,7 @@ function page() {
           </div>
         </div>
       </section>
-      <p className="flex justify-center text-lg lg:text-2xl m-6 font-bold">
+      <p className="flex justify-center text-base md:text-xl lg:text-2xl m-6 font-bold">
         Pa'l alma tiene su casa en Córdoba Capital, Argentina
       </p>
       <div className="w-full hidden xl:flex absolute -z-10">
