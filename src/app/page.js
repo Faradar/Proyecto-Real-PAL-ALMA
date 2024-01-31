@@ -171,13 +171,13 @@ export default function Home() {
         />
       </div>
       <section className="w-11/12 m-auto 2xl:mr-[90px] mb-10">
-        <h2 className="pl-8 font-bold text-center lg:text-xl 2xl:text-left">
+        <h2 className="font-bold text-center lg:text-xl 2xl:text-left 2xl:pl-8">
           Algunos de nuestros productos:
         </h2>
         <div className="mx-auto grid 2xl:gap-x-16 grid-cols-1 min-[540px]:grid-cols-2 2xl:grid-cols-4">
           <HomeCardList data={productos} linkHref="/productos" />
         </div>
-        <h2 className="pl-8 font-bold text-center lg:text-xl 2xl:text-left mt-10">
+        <h2 className="font-bold text-center lg:text-xl 2xl:text-left 2xl:pl-8 mt-10">
           Algunos de nuestros talleres:
         </h2>
         <div className="mx-auto grid 2xl:gap-x-16 grid-cols-1 min-[540px]:grid-cols-2 2xl:grid-cols-4">

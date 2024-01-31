@@ -2,8 +2,6 @@
 import { useState } from "react";
 import axios from "axios";
 import { FiSend } from "react-icons/fi";
-import ReCAPTCHA from "react-google-recaptcha";
-// 6LdFziQpAAAAAGhXSwnACFKslGmlJSRwanLe9VqB
 
 import dynamic from 'next/dynamic'
 
@@ -25,7 +23,6 @@ function Form() {
       .toLowerCase()
       .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
   };
-  const [capVal, setCapVal] = useState(null)
 
   const handleName = (e) => {
     setClientName(e.target.value);
@@ -157,7 +154,8 @@ function Form() {
               />
             </div>
           </div>
-          <div className="md:mt-6">
+          <div className="">
+            <label htmlFor="messages" className="text-lg font-bold ml-2">Dejanos tu consulta</label>
             <textarea
               required
               onChange={handleMessages}
@@ -166,12 +164,10 @@ function Form() {
                 ? "border-red-600 focus-visible:border-red-600"
                 : "border-zinc-300/30 "
                 } w-full bg-slate-100/90 border-2 rounded-2xl px-4 py-2 text-base text-gray-600 outline-none duration-300 resize-none`}
-              placeholder={"Dejá acá tu consulta"}
               rows="8"
             ></textarea>
             <div className="flex flex-col mt-6 md:flex-row justify-center text-center align-middle">
-              <ReCAPTCHA sitekey="6LdFziQpAAAAAGhXSwnACFKslGmlJSRwanLe9VqB" onChange={val => setCapVal(val)} className="justify-center" />
-              <button className="border-2 rounded-2xl border-orange-500 bg-orange-500 flex justify-center text-center mt-2 md:mt-0 md:ml-4 md:w-full text-xl md:text-2xl lg:text-3xl py-2 md:py-6 transition duration-150 hover:bg-orange-600 hover:ease-linear" disabled={!capVal} onClick={handleSend}>Enviar <span><FiSend /></span> </button>
+              <button className="border-2 rounded-2xl border-orange-500 bg-orange-500 flex justify-center text-center mt-2 md:mt-0 md:w-full text-xl md:text-2xl lg:text-3xl py-2 md:py-6 transition duration-150 hover:bg-orange-600 hover:ease-linear text-white" onClick={handleSend}>ENVIAR MENSAJE</button>
             </div>
           </div>
         </form>
