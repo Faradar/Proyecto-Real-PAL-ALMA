@@ -13,7 +13,6 @@ import naranjaBorde3 from '../../../public/contacto/bordeNaranja3.svg'
 
 import Image from "next/image";
 import Link from "next/link";
-import autoprefixer from "autoprefixer";
 
 function page() {
   return (
@@ -38,17 +37,17 @@ function page() {
       <p className="flex justify-center text-lg lg:text-2xl my-4 font-bold">
         Pa'l alma tiene su casa en Córdoba Capital, Argentina
       </p>
-      <div className="w-full hidden lg:flex absolute -z-10">
+      <div className="w-full hidden xl:flex absolute -z-10">
         <Image
           src={verdeBorde}
           width={300}
-          className="flex absolute top-20 right-0"
+          className="flex absolute top-72 right-0"
           alt="borde de micelania verde"
         />
         <Image
           src={miceVerde}
           width={230}
-          className="flex absolute top-48 right-0"
+          className="flex absolute top-96 right-0"
           alt="micelania verde"
         />
       </div>
