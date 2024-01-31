@@ -7,7 +7,7 @@ const Footer = () => {
   //const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <footer className="mt-11 bg-[#e8e8e8] grid grid-cols-3 justify-center items-center h-9 min-[540px]:h-12 md:h-24">
+    <footer className="mt-11 bg-[#e8e8e8] grid grid-cols-3 justify-center items-center h-9 min-[540px]:h-12 md:h-24 md:bg-eaf0f4">
       <div className="flex justify-center items-center">
         <h2 className="text-xs min-[540px]:text-sm">Copyright ©2024</h2>
       </div>
