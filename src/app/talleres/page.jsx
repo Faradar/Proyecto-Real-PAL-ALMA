@@ -376,7 +376,6 @@ export default function Talleres() {
                 src="/talleres/misc-blue-outline.svg"
                 width={230}
                 height={200}
-                s
                 alt="micelania amarilla"
                 className="absolute z-[-10] top-[700px] right-0"
               />
