@@ -80,7 +80,7 @@ function page() {
             su pasión por las{" "}
             <b>
               ARTES PLÁSTICAS, el DIBUJO, la NATURALEZA, las EXPERIENCIAS al
-              AIRE LIBRE y VIAJARSomos Patricia y María, nos conoc
+              AIRE LIBRE y VIAJAR
             </b>
             .
           </p>
