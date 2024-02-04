@@ -1,6 +1,7 @@
 # Pa'l Alma Website
 
 > Welcome to the repository of the Pa'l Alma Website! This project is the result of two months of effort and collaboration between a talented team of people, with the aim of enhancing the online presence of Pa'l Alma, an organization based in Córdoba, Argentina.
+
 > You can find the website [_here_](https://pal-alma.vercel.app/).
 
 ## Table of Contents
