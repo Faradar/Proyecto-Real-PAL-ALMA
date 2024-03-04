@@ -45,28 +45,29 @@ export default function Talleres() {
           Talleres de arte para niños y adultos, utilizando materiales
           cotidianos y promoviendo la creatividad.
         </p>
-        <div className="grid grid-cols-2 text-left">
-          <div className="modulos  xl:ml-150">
-            <div
-              onClick={() => {
-                cambiarTipo("nino");
-              }}
-              className="modulo cursor-pointer"
-            >
-              <div className="modulo1"></div>
-            </div>
-            <div
-              onClick={() => {
-                cambiarTipo("adulto");
-              }}
-              className="modulo cursor-pointer"
-            >
-              <div className="modulo2"></div>
-            </div>
-          </div>
-          <div></div>
-        </div>
       </div>
+      <div className="grid grid-cols-2 ml-2 max-w-[1040px] lg:mx-auto">
+        <div className="modulos ml-2 mr-auto">
+          <div
+            onClick={() => {
+              cambiarTipo("nino");
+            }}
+            className="modulo cursor-pointer"
+          >
+            <div className="modulo1"></div>
+          </div>
+          <div
+            onClick={() => {
+              cambiarTipo("adulto");
+            }}
+            className="modulo cursor-pointer"
+          >
+            <div className="modulo2"></div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+
       {type === "nino" ? (
         <div>
           <div className="relative md:hidden">
@@ -170,7 +171,7 @@ export default function Talleres() {
           <div className="flex items-center justify-center mb-5 relative">
             <div
               onClick={handlePrevPage}
-              className="absolute left-20 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
+              className="absolute left-4 md:left-20 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
             >
               <span className="text-3xl">&lt;</span>
             </div>
@@ -185,7 +186,7 @@ export default function Talleres() {
 
             <div
               onClick={handleNextPage}
-              className="absolute right-20 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
+              className="absolute right-4 md:right-20 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
             >
               <span className="text-3xl">&gt;</span>
             </div>
@@ -409,7 +410,7 @@ export default function Talleres() {
           <div className="flex items-center justify-center mb-5 relative">
             <div
               onClick={handlePrevPage}
-              className="absolute left-20 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
+              className="absolute left-4 md:left-20 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
             >
               <span className="text-3xl">&lt;</span>
             </div>
@@ -424,7 +425,7 @@ export default function Talleres() {
 
             <div
               onClick={handleNextPage}
-              className="absolute right-20 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
+              className="absolute right-4 md:right-20 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
             >
               <span className="text-3xl">&gt;</span>
             </div>

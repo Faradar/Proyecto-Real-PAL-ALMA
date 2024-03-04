@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Pa'l Alma Website
 
-## Getting Started
+> Welcome to the repository of the Pa'l Alma Website! This project is the result of two months of effort and collaboration between a talented team of people, with the aim of enhancing the online presence of Pa'l Alma, an organization based in Córdoba, Argentina.
 
-First, run the development server:
+> You can find the website [_here_](https://pal-alma.vercel.app/).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Table of Contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [General Info](#general-info)
+- [Technologies](#technologies)
+- [Screenshots](#screenshots)
+- [Project Status](#project-status)
+- [Acknowledgements](#acknowledgements)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## General Info
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This repository houses the code and resources used in the development of the main website for Pa'l Alma, an Argentine organization dedicated to sharing their passion for art and nature through their crafts and workshops. This project was conceived as a prize awarded for reaching the top 10 at Coderhouse, providing participants with the opportunity to apply their skills to a real and meaningful project. The website itself is fully responsive and can be viewed on any device.
 
-## Learn More
+## Technologies
 
-To learn more about Next.js, take a look at the following resources:
+Project is created with:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js](https://nextjs.org/) - 14.0.3
+- [Tailwind CSS](https://tailwindcss.com/) - 3.3.0
+- [Axios](https://axios-http.com/) - 1.6.2
+- [React Slick](https://react-slick.neostack.com/) - 0.29.0
+- [Getform.io](https://getform.io/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Screenshots
 
-## Deploy on Vercel
+![Example screenshot 1](./public/readme/Screenshot1.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Example screenshot 2](./public/readme/Screenshot2.png)
+
+---
+
+![Example screenshot 3](./public/readme/Screenshot3.png)
+
+---
+
+![Example screenshot 4](./public/readme/Screenshot4.png)
+
+## Project Status
+
+Project is: _Finished_
+
+## Acknowledgements
+
+- A special thanks to the entire team for their dedication and collaborative spirit throughout the development of the Pa'l Alma website:
+  - **UX/UI Designers:**
+    - [Marina Ayelén Piam](https://www.linkedin.com/in/marinaayelenpiam/)
+    - [Sandy Ocampo](https://www.linkedin.com/in/sandyocampo/)
+  - **Frontend Developers:**
+    - [Franco Ursino](https://www.linkedin.com/in/francoursino/)
+    - [Maicol Marcenaro](https://www.linkedin.com/in/maicol-marcenaro/)
+    - [Ricardo Lemos](https://www.linkedin.com/in/ricardolemos22/)
+    - [Tomás Echeveste Arteaga](https://www.linkedin.com/in/tomasecheveste/)
+- Many thanks to María and Patricia, the owners of Pa'l Alma, for their support throughout the development of this project.
+- Many thanks to Coderhouse for the opportunity to work on this project.

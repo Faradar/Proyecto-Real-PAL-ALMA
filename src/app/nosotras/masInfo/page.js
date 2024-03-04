@@ -7,7 +7,7 @@ import miceAzul2 from '../../../../public/nosotras/miceAzul2.svg'
 import azulBorde2 from '../../../../public/nosotras/azulBorde2.svg'
 import miceVerde2 from '../../../../public/nosotras/miceVerde2.svg'
 import verdeBorde2 from '../../../../public/nosotras/verdeBorde2.svg'
-import miceMarron from '../../../../public/nosotras/miceMarron.svg'
+import miceMarron2 from '../../../../public/nosotras/miceMarron.svg'
 import marronBorde2 from '../../../../public/nosotras/marronBorde2.svg'
 import ReadMore from '@/components/contact/ReadMore'
 import logo from '../../../../public/contacto/logo.svg'
@@ -53,7 +53,7 @@ function page() {
 
         <div className="hidden lg:flex absolute left-0 top-full z-[-10]">
           <Image src={marronBorde2} width={310} className="flex relative bottom-80 right-4" alt='borde de micelania marron 2' />
-          <Image src={miceMarron} width={200} className="flex absolute bottom-96 z-[-20] left-0" alt='micelania marron 2' />
+          <Image src={miceMarron2} width={200} className="flex absolute bottom-96 z-[-20] left-0" alt='micelania marron 2' />
         </div>
 
         <div className='grid grid-rows-4 lg:grid-cols-2 lg:grid-rows-1'>
