@@ -109,7 +109,7 @@ export default function Home() {
             className="mx-auto max-w-[920px] md:w-11/12 md:mt-[-20px] lg:w-12/12"
             alt="logo de pa'l alma grande"
           />
-          <p className="text-xs sm:text-sm md:text-xl font-semibold py-2 w-64 max-w-[920px] min-[530px]:w-auto mx-auto">
+          <p className="text-xs sm:text-sm md:text-xl font-semibold py-2 w-64 max-w-[760px] min-[530px]:w-auto mx-auto">
             “En el corazón de “Pa'l alma” late el amor por la diversidad
             biológica de Argentina. Nuestros productos son una manifestación de
             esta pasión, capturando la esencia única de la flora y fauna que nos

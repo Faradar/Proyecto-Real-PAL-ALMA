@@ -59,16 +59,10 @@ function page() {
       </section>
       <div className="md:hidden absolute right-0 top-10 z-[-10]">
         <Image
-          src={verdeBorde}
+          src={miceVerde}
           width={150}
           className="flex relative top-48 right-0"
           alt="borde de micelania verde"
-        />
-        <Image
-          src={miceVerde}
-          width={110}
-          className="flex absolute translate-y-0 right-0"
-          alt="micelania verde"
         />
       </div>
       <section className="flex flex-col text-center my-10 text-lg md:text-lg w-10/12 mx-auto">
@@ -150,17 +144,11 @@ function page() {
           alt="micelania marron"
         />
       </div>
-      <div className="md:hidden absolute left-0 bottom-[-250px] z-[-10]">
+      <div className="md:hidden absolute -bottom-20 left-0 z-[-10]">
         <Image
           src={miceAmarilla2}
           width={270}
-          className="flex absolute top-14 left-0"
-          alt="micelania amarilla 2"
-        />
-        <Image
-          src={amarillaBorde2}
-          width={340}
-          className="flex relative z-[-10] right-0"
+          className="flex relative -top-10 z-[-10] right-0"
           alt=" borde de micelania amarilla 2"
         />
       </div>
