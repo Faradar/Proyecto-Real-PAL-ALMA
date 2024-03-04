@@ -53,13 +53,13 @@ function page() {
       <div className="w-full hidden xl:flex absolute -z-10">
         <Image
           src={verdeBorde}
-          width={300}
+          width={255}
           className="flex absolute top-72 right-0"
           alt="borde de micelania verde"
         />
         <Image
           src={miceVerde}
-          width={230}
+          width={200}
           className="flex absolute top-96 right-0"
           alt="micelania verde"
         />
