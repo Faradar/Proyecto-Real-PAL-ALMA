@@ -132,7 +132,7 @@ function page() {
                 palalma.dibujos
               </a>
             </li>
-            <li className=" hover:text-slate-400">
+            <li className=" hover:text-slate-400 text-sm md:text-base">
               Email:{" "}
               <a href="mailto:palalma.argentina@gmail.com" target="blank">
                 palalma.argentina@gmail.com
