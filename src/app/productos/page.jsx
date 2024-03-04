@@ -94,7 +94,7 @@ export default function productos() {
         <div className="absolute right-0">
           <img src="/img/productos/firstFon.svg" alt="Fondocolor" />
         </div>
-        <div className="absolute top-1 right-0">
+        <div className="absolute hidden 2xl:inline top-1 right-0">
           <img src="/img/productos/sec.svg" alt="Fondo2" />
         </div>
       </div>

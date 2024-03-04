@@ -6,7 +6,7 @@ import verdeBorde from "../../../public/contacto/verdeBorde.svg";
 import miceNaranja from "../../../public/contacto/miceNaranja.svg";
 import naranjaBorde from "../../../public/contacto/naranjaBorde2.svg";
 import logo from "../../../public/contacto/logo.svg";
-import miceBordo from "../../../public/contacto/miceBordo.svg";
+import miceBordo from "../../../public/contacto/miceMarron.svg";
 import miceNaranja3 from "../../../public/contacto/miceNaranja3.svg";
 import bordoBorde from "../../../public/contacto/bordoBorde.svg";
 import naranjaBorde3 from "../../../public/contacto/bordeNaranja3.svg";
@@ -132,7 +132,7 @@ function page() {
                 palalma.dibujos
               </a>
             </li>
-            <li className=" hover:text-slate-400">
+            <li className=" hover:text-slate-400 text-sm md:text-base">
               Email:{" "}
               <a href="mailto:palalma.argentina@gmail.com" target="blank">
                 palalma.argentina@gmail.com
