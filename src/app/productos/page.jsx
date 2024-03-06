@@ -83,18 +83,11 @@ export default function productos() {
 
   return (
     <div className="overflow-hidden">
-      {/* <div class="relative z-[-99]">
-                <div class="absolute img1">
-                    <img  src="/img/productos/first.svg" alt="Fondo1" />
-                    
-                </div>  
-                
-            </div> */}
       <div className="relative z-[-99] ">
         <div className="absolute right-0">
           <img src="/img/productos/firstFon.svg" alt="Fondocolor" />
         </div>
-        <div className="absolute hidden 2xl:inline top-1  right-0">
+        <div className="absolute hidden 2xl:inline top-1 right-0">
           <img src="/img/productos/sec.svg" alt="Fondo2" />
         </div>
       </div>
@@ -102,7 +95,7 @@ export default function productos() {
         <div className="absolute img-thirdFon">
           <img src="/img/productos/thirdFon.svg" alt="Fondocolor3" />
         </div>
-        <div className="absolute img-third">
+        <div className="absolute img-third hidden 2xl:inline">
           <img src="/img/productos/third.svg" alt="Fondo3" />
         </div>
       </div>
@@ -110,22 +103,22 @@ export default function productos() {
         <div className="absolute img-fourthFon">
           <img src="/img/productos/fourthFon.svg" alt="Fondocolor4" />
         </div>
-        <div className="absolute img-fourth">
+        <div className="absolute img-fourth hidden 2xl:inline">
           <img src="/img/productos/fourth.svg" alt="Fondo4" />
         </div>
       </div>
       <div>
         <div className="">
-          <h1 className="text-center text-xl font-bold  mt-20">
+          <h1 className="text-center text-xl font-bold mt-20 px-2">
             Creación de productos con diseño autóctono, comprometiéndose con la
             sostenibilidad al reciclar materiales textiles.
           </h1>
 
           <div>
-            <h2 className="text-x pt-10 pl-10">
+            <h2 className="text-center text-xl font-bold pt-8 pb-4 px-2">
               Capturando la esencia única de la flora y fauna que nos rodea.
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 bg-eaf0f4 p-4 md:p-10 ">
+            <div className="grid grid-cols-2 items-start md:grid-cols-4 gap-8 bg-eaf0f4 p-4 md:p-10 text-center">
               {products.map((product, index) => (
                 <ProductCard
                   key={index}
@@ -138,14 +131,32 @@ export default function productos() {
             </div>
           </div>
         </div>
-        <p className="text-center pt-10 font-bold">
-          Si querés conocer más productos escribinos a nuestro WhatsApp +54 9
-          3513955439 (Pato) | +54 9 3513870553 (María)
-        </p>
+        <div className="text-center pt-10 font-bold">
+          <p className="mb-1">
+            Si querés conocer más productos escribinos a nuestro WhatsApp
+          </p>
+          <div className="flex flex-col min-[430px]:flex-row justify-center items-center mb-2">
+            <a
+              className="whitespace-nowrap hover:text-slate-400"
+              href="https://wa.me/+5493513955439?text=Buenas!+Me+contacto+desde+la+página+web"
+              target="blank"
+            >
+              +54 9 3513955439 (Pato) |
+            </a>
+            <a
+              className="whitespace-nowrap ml-1 hover:text-slate-400"
+              href="https://wa.me/+5493513870553?text=Buenas!+Me+contacto+desde+la+página+web"
+              target="blank"
+            >
+              +54 9 3513870553 (María)
+            </a>
+          </div>
+        </div>
+
         <div className="flex items-center justify-center flex-col md:flex-row  bg-eaf0f4 p-4">
           <div className="max-w-1200 text-center font-bold text-sm m-5 items-center justify-center point-text">
             <h2>¿Cómo comprar nuestros productos vía WhatsApp?</h2>
-            <p className="max-w-600 m-5 font-quicksand text-left">
+            <p className="max-w-600 m-5 font-quicksand text-left font-medium">
               1. Explora nuestra variedad de productos y elige el que más te
               guste. <br />
               2. Envíanos un mensaje por WhatsApp con el nombre o una breve

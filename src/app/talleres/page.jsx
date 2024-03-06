@@ -52,7 +52,9 @@ export default function Talleres() {
             onClick={() => {
               cambiarTipo("nino");
             }}
-            className="modulo cursor-pointer"
+            className={`modulo cursor-pointer ${
+              type === "nino" ? "opacity-50" : ""
+            }`}
           >
             <div className="modulo1"></div>
           </div>
@@ -60,7 +62,9 @@ export default function Talleres() {
             onClick={() => {
               cambiarTipo("adulto");
             }}
-            className="modulo cursor-pointer"
+            className={`modulo cursor-pointer ${
+              type === "adulto" ? "opacity-50" : ""
+            }`}
           >
             <div className="modulo2"></div>
           </div>
@@ -171,7 +175,7 @@ export default function Talleres() {
           <div className="flex items-center justify-center mb-5 relative">
             <div
               onClick={handlePrevPage}
-              className="absolute left-4 md:left-20 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
+              className="absolute left-4 md:left-20 flex items-center transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
             >
               <span className="text-3xl">&lt;</span>
             </div>
@@ -186,7 +190,7 @@ export default function Talleres() {
 
             <div
               onClick={handleNextPage}
-              className="absolute right-4 md:right-20 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
+              className="absolute right-4 md:right-20 flex items-center transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
             >
               <span className="text-3xl">&gt;</span>
             </div>
@@ -226,7 +230,7 @@ export default function Talleres() {
           <div className="hidden md:flex items-center justify-center mb-10 relative">
             <div
               onClick={handlePrevComent}
-              className="absolute left-4 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600  hover:text-orange-500 font-bold"
+              className="absolute left-4 flex items-center transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600  hover:text-orange-500 font-bold"
             >
               <span className="text-3xl">&lt;</span>
             </div>
@@ -298,7 +302,7 @@ export default function Talleres() {
 
             <div
               onClick={handleNextComent}
-              className="absolute right-4 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
+              className="absolute right-4 flex items-center transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
             >
               <span className="text-3xl">&gt;</span>
             </div>
@@ -410,7 +414,7 @@ export default function Talleres() {
           <div className="flex items-center justify-center mb-5 relative">
             <div
               onClick={handlePrevPage}
-              className="absolute left-4 md:left-20 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
+              className="absolute left-4 md:left-20 flex items-center transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
             >
               <span className="text-3xl">&lt;</span>
             </div>
@@ -425,7 +429,7 @@ export default function Talleres() {
 
             <div
               onClick={handleNextPage}
-              className="absolute right-4 md:right-20 flex items-center inline-block transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
+              className="absolute right-4 md:right-20 flex items-center transition-transform hover:translate-x-1 motion-reduce:transform-none cursor-pointer text-orange-600 hover:text-orange-500 font-bold"
             >
               <span className="text-3xl">&gt;</span>
             </div>
