@@ -4,7 +4,7 @@ import miceAzul from "../../../public/contacto/micelaniaAzul.svg";
 import azulBorde from "../../../public/contacto/azulBorde.svg";
 import verdeBorde from "../../../public/contacto/verdeBorde.svg";
 import miceNaranja from "../../../public/contacto/miceNaranja.svg";
-import naranjaBorde from "../../../public/contacto/naranjaBorde2.svg";
+// import naranjaBorde from "../../../public/contacto/naranjaBorde2.svg";
 import logo from "../../../public/contacto/logo.svg";
 import miceBordo from "../../../public/contacto/miceMarron.svg";
 import miceNaranja3 from "../../../public/contacto/miceNaranja3.svg";
@@ -52,16 +52,16 @@ function page() {
       </p>
       <div className="w-full hidden xl:flex absolute -z-10">
         <Image
-          src={verdeBorde}
-          width={255}
-          className="flex absolute top-72 right-0"
-          alt="borde de micelania verde"
+          src={miceVerde}
+          width={230}
+          className="flex absolute top-96 right-0 xl:top-[420px]"
+          alt="micelania verde"
         />
         <Image
-          src={miceVerde}
-          width={200}
-          className="flex absolute top-96 right-0"
-          alt="micelania verde"
+          src={verdeBorde}
+          width={300}
+          className="flex absolute top-72 right-0 xl:top-[400px] xl:w-[250px]"
+          alt="borde de micelania verde"
         />
       </div>
       <div className="w-full md:hidden absolute -z-10">
@@ -78,7 +78,7 @@ function page() {
           alt=" borde de micelania verde mobile"
         />
       </div>
-      <section className="w-10/12 lg:w-11/12 flex flex-col md:flex-row mx-auto lg:ml-60 lg:mr-auto my-10">
+      <section className="w-10/12 lg:w-[1400px] xl:w-[2000px] flex flex-col md:flex-row mx-auto lg:ml-10 2xl:ml-32 lg:mr-auto my-10">
         <iframe
           className="hidden lg:flex lg:w-1/2"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.6084521077305!2d-64.25286542405686!3d-31.397358174270547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329f4f9b39a933%3A0xdca784a664308b33!2sAv.%20Duarte%20Quir%C3%B3s%205223%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1702330800472!5m2!1ses-419!2sar"
@@ -90,7 +90,7 @@ function page() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
 
-        <div className="w-2/3 pl-0 ml-0 mx-auto md:pl-4 my-4 lg:my-0 lg:ml-6 xl:mr-4 flex flex-col text-left">
+        <div className="w-2/3 pl-0 ml-0 mx-auto md:pl-4 my-4 lg:my-0 lg:ml-6 lg:mr-64 flex flex-col text-left">
           <h2 className="text-xl md:text-2xl lg:text-3xl font-bold uppercase mb-2 tracking-widest">
             contacto :
           </h2>
@@ -114,27 +114,33 @@ function page() {
                 +5493513870553 (María)
               </a>
             </li>
-            <li className=" hover:text-slate-400">
+            <li>
               Facebook:{" "}
               <a
                 href="https://www.facebook.com/profile.php?id=100085206638363"
                 target="blank"
+                className=" hover:text-slate-400"
               >
                 pa'l alma dibujos
               </a>
             </li>
-            <li className=" hover:text-slate-400">
+            <li>
               Instagram:{" "}
               <a
                 href="https://www.instagram.com/palalma.dibujos?igsh=c2xiyjlmagh4nwdv"
                 target="blank"
+                className=" hover:text-slate-400"
               >
                 palalma.dibujos
               </a>
             </li>
-            <li className=" hover:text-slate-400 text-sm md:text-base">
+            <li className="text-sm md:text-base">
               Email:{" "}
-              <a href="mailto:palalma.argentina@gmail.com" target="blank">
+              <a
+                href="mailto:palalma.argentina@gmail.com"
+                target="blank"
+                className="hover:text-slate-400"
+              >
                 palalma.argentina@gmail.com
               </a>
             </li>
@@ -143,20 +149,19 @@ function page() {
             taller pa'l alma
           </h3>
           <ul>
-            <li className=" lg:w-3/4 lg:text-lg">
+            <li className="lg:w-3/4 lg:text-lg xl:max-w-[450px] 2xl:max-w-full">
               Dirección: Duarte Quirós 5223 - B° Lomas del Suquia - Casa interna
               226
             </li>
-            <li className=" lg:text-lg">
-              Localidad: Cordoba capital - CP 5003
-            </li>
+            <li className="lg:text-lg">Localidad: Cordoba capital - CP 5003</li>
             <li className="lg:w-3/4 lg:text-lg">HORARIO DE CONSULTA:</li>
             <li className="lg:w-3/4 lg:text-lg">9 a 12:30 hs</li>
             <li className="relative left-40 bottom-14">
               <Link
                 href="https://www.google.com/maps/place/Duarte+Quir%C3%B3s+5223,+C%C3%B3rdoba/@-31.3975708,-64.2500876,18.45z/data=!4m5!3m4!1s0x94329f31a7ca4715:0x291541482743d8d3!8m2!3d-31.397304!4d-64.2502643?entry=ttu"
                 target="blank"
-                className="flex lg:hidden bg-orange-500 w-36 mx-auto p-2 mt-3 rounded-lg text-white justify-center text-xl font-bold transition duration-150 hover:bg-orange-600 hover:ease-linear">
+                className="flex lg:hidden bg-orange-500 w-36 mx-auto p-2 mt-3 rounded-lg text-white justify-center text-xl font-bold transition duration-150 hover:bg-orange-600 hover:ease-linear"
+              >
                 Ver Mapa
               </Link>
             </li>
@@ -199,12 +204,12 @@ function page() {
           className="flex top-3 relative left-0"
           alt="micelania naranja"
         />
-        <Image
+        {/* <Image
           src={naranjaBorde}
           width={140}
           className="flex absolute top-[-13px] left-1"
           alt=" borde de micelania azul"
-        />
+        /> */}
       </div>
       <Form />
     </main>
