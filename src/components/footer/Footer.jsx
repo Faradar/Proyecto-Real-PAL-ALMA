@@ -29,9 +29,9 @@ const Footer = () => {
           <Image
             src="/footer/facebook.svg"
             alt="facebook"
-            width={9}
-            height={9}
-            className="min-[540px]:w-4 md:w-6"
+            width={9.4}
+            height={9.4}
+            className="min-[540px]:w-[16.7px] md:w-[25.1px]"
           />
         </Link>
         <Link

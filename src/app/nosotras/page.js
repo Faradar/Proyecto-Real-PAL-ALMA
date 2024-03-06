@@ -6,10 +6,8 @@ import miceAzul2 from "../../../public/nosotras/miceAzul2.svg";
 import miceMarron from "../../../public/nosotras/miceMarron.svg";
 import azulBorde2 from "../../../public/nosotras/azulBorde2.svg";
 import marronBorde from "../../../public/nosotras/marronBorde.svg";
-import amarillaBorde2 from "../../../public/contacto/amarillaBorde2.svg";
 import miceAmarilla2 from "../../../public/contacto/miceAmarilla2.svg";
 import miceVerde from "../../../public/contacto/micelaniaVerde.svg";
-import verdeBorde from "../../../public/contacto/verdeBorde.svg";
 import logo from "../../../public/contacto/logo.svg";
 import miceAmarilla from "../../../public/contacto/micelaniaAmarilla.svg";
 import miceNaranja2 from "../../../public/contacto/micelaniaNaranja.svg";
@@ -132,16 +130,16 @@ function page() {
       </section>
       <div className="hidden lg:flex absolute top-3/4 z-[-10]">
         <Image
-          src={marronBorde}
-          width={300}
-          className="flex relative bottom-2/3 left-0"
-          alt="borde de micelania marron"
-        />
-        <Image
           src={miceMarron}
           width={200}
-          className="flex absolute top-2 left-0"
+          className="flex absolute top-2 left-0 2xl:w-[250px]"
           alt="micelania marron"
+        />
+        <Image
+          src={marronBorde}
+          width={280}
+          className="flex relative bottom-2/3 left-0 2xl:w-[350px]"
+          alt="borde de micelania marron"
         />
       </div>
       <div className="md:hidden absolute -bottom-20 left-0 z-[-10]">
@@ -155,14 +153,14 @@ function page() {
       <div className="hidden lg:flex absolute right-0 top-full z-[-10]">
         <Image
           src={azulBorde2}
-          width={230}
-          className="flex absolute  top-72 right-4"
+          width={200}
+          className="flex absolute top-72 right-4 xl:w-full"
           alt="borde de micelania azul 2"
         />
         <Image
           src={miceAzul2}
-          width={250}
-          className="flex relative top-72 z-[-10] right-0"
+          width={230}
+          className="flex relative top-72 z-[-10] right-0 2xl:w-[300px]"
           alt="micelania azul 2"
         />
       </div>

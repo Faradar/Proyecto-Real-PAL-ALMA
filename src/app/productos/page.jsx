@@ -83,18 +83,11 @@ export default function productos() {
 
   return (
     <div className="overflow-hidden">
-      {/* <div class="relative z-[-99]">
-                <div class="absolute img1">
-                    <img  src="/img/productos/first.svg" alt="Fondo1" />
-                    
-                </div>  
-                
-            </div> */}
       <div className="relative z-[-99] ">
         <div className="absolute right-0">
           <img src="/img/productos/firstFon.svg" alt="Fondocolor" />
         </div>
-        <div className="absolute hidden 2xl:inline top-1  right-0">
+        <div className="absolute hidden 2xl:inline top-1 right-0">
           <img src="/img/productos/sec.svg" alt="Fondo2" />
         </div>
       </div>
@@ -102,7 +95,7 @@ export default function productos() {
         <div className="absolute img-thirdFon">
           <img src="/img/productos/thirdFon.svg" alt="Fondocolor3" />
         </div>
-        <div className="absolute img-third">
+        <div className="absolute img-third hidden 2xl:inline">
           <img src="/img/productos/third.svg" alt="Fondo3" />
         </div>
       </div>
@@ -110,19 +103,19 @@ export default function productos() {
         <div className="absolute img-fourthFon">
           <img src="/img/productos/fourthFon.svg" alt="Fondocolor4" />
         </div>
-        <div className="absolute img-fourth">
+        <div className="absolute img-fourth hidden 2xl:inline">
           <img src="/img/productos/fourth.svg" alt="Fondo4" />
         </div>
       </div>
       <div>
         <div className="">
-          <h1 className="text-center text-xl font-bold  mt-20">
+          <h1 className="text-center text-xl font-bold mt-20 px-2">
             Creación de productos con diseño autóctono, comprometiéndose con la
             sostenibilidad al reciclar materiales textiles.
           </h1>
 
           <div>
-            <h2 className="text-x pt-10 pl-10">
+            <h2 className="text-center text-xl font-bold pt-10 px-2">
               Capturando la esencia única de la flora y fauna que nos rodea.
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 bg-eaf0f4 p-4 md:p-10 ">
