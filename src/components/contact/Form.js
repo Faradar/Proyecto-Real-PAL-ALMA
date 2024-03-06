@@ -1,10 +1,24 @@
 "use client"
 import { useState } from "react";
 import axios from "axios";
+import React, { useRef } from 'react';
+import emailjs, { sendForm } from '@emailjs/browser';
 
 import dynamic from 'next/dynamic'
 
 function Form() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_fv0sniu', 'template_utt96ez', form.current, 'MdkX9ebGX0Da-jMTC')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
   const [clientName, setClientName] = useState("");
   const [clientLastname, setClientLastname] = useState("");
@@ -17,11 +31,11 @@ function Form() {
   const [errPhone, setErrPhone] = useState(false);
   const [errMessages, setErrMessage] = useState(false);
   const [successMsg, setSuccessMsg] = useState("");
-  const EmailValidation = (email) => {
-    return String(email)
-      .toLowerCase()
-      .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
-  };
+  // const EmailValidation = (email) => {
+  //   return String(email)
+  //     .toLowerCase()
+  //     .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
+  // };
 
   const handleName = (e) => {
     setClientName(e.target.value);
@@ -54,10 +68,10 @@ function Form() {
     }
     if (!email) {
       setErrEmail(true);
-    } else {
-      if (!EmailValidation(email)) {
-        setErrEmail(true);
-      }
+    // } else {
+    //   if (!EmailValidation(email)) {
+    //     setErrEmail(true);
+    //   }
     }
     if (!phone) {
       setErrPhone(true);
@@ -65,10 +79,12 @@ function Form() {
     if (!messages) {
       setErrMessage(true);
     }
-    if (clientName && email && EmailValidation(email) && messages) {
+    if (clientName && email && messages) {
       axios.post("https://getform.io/f/eb362684-70c2-4f34-b6db-e4f597d27256", {
-        name: clientName,
-        email: email,
+        Nombre: clientName,
+        Apellido: clientLastname,
+        Email: email,
+        Numero: phone,
         message: messages,
       });
       setSuccessMsg(
@@ -91,7 +107,8 @@ function Form() {
       ) : (
         <form
           id="form"
-          action="https://getform.io/f/eb362684-70c2-4f34-b6db-e4f597d27256"
+          ref={form}
+          onSubmit={sendEmail}
           method="POST"
           className="p-6 grid grid-col gap-6 lg:grid-cols-2"
         >
@@ -102,6 +119,7 @@ function Form() {
                 required
                 onChange={handleName}
                 value={clientName}
+                name="user_name"
                 className={`${errClientName
                   ? "border-red-600 focus-visible:border-red-600"
                   : "border-zinc-300/30 "
@@ -116,6 +134,7 @@ function Form() {
                 required
                 onChange={handleLastname}
                 value={clientLastname}
+                name="user_lastName"
                 className={`${errClientLastname
                   ? "border-red-600 focus-visible:border-red-600"
                   : "border-zinc-300/30 "
@@ -130,11 +149,12 @@ function Form() {
                 required
                 onChange={handleEmail}
                 value={email}
+                name="user_email"
                 className={`${errEmail
                   ? "border-red-600 focus-visible:border-red-600"
                   : "border-zinc-300/30 "
                   } w-full bg-slate-100/90 border-2 rounded-lg px-4 py-2 text-base text-gray-600 outline-none duration-300`}
-                type="email"
+                type="text"
                 
               />
             </div>
@@ -144,6 +164,7 @@ function Form() {
                 required
                 onChange={handlePhone}
                 value={phone}
+                name="user_phone"
                 className={`${errPhone
                   ? "border-red-600 focus-visible:border-red-600"
                   : "border-zinc-300/30 "
@@ -159,6 +180,7 @@ function Form() {
               required
               onChange={handleMessages}
               value={messages}
+              name="message"
               className={`${errMessages
                 ? "border-red-600 focus-visible:border-red-600"
                 : "border-zinc-300/30 "
@@ -166,7 +188,7 @@ function Form() {
               rows="8"
             ></textarea>
             <div className="flex flex-col mt-6 md:flex-row justify-center text-center align-middle">
-              <button className="border-2 rounded-2xl border-orange-500 bg-orange-500 flex justify-center text-center mt-2 md:mt-0 md:w-full text-xl md:text-2xl lg:text-3xl py-2 md:py-6 transition duration-150 hover:bg-orange-600 hover:ease-linear text-white" onClick={handleSend}>ENVIAR MENSAJE</button>
+              <button className="border-2 rounded-2xl border-orange-500 bg-orange-500 flex justify-center text-center mt-2 md:mt-0 md:w-full text-xl md:text-2xl lg:text-3xl py-2 md:py-6 transition duration-150 hover:bg-orange-600 hover:ease-linear text-white" onClick={handleSend} value={sendForm}>ENVIAR MENSAJE</button>
             </div>
           </div>
         </form>
