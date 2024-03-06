@@ -98,20 +98,20 @@ function page() {
             <li className="pt-4">
               WhatsApp: <br />{" "}
               <a
-                className=" hover:text-slate-400"
+                className="hover:text-slate-400 whitespace-nowrap"
                 href="https://wa.me/+5493513955439?text=Buenas!+Me+contacto+desde+la+página+web"
                 target="blank"
               >
-                +5493513955439 (Pato)
+                +54 9 3513955439 (Pato)
               </a>{" "}
               |{" "}
               <a
-                className=" hover:text-slate-400"
+                className="hover:text-slate-400 whitespace-nowrap"
                 href="https://wa.me/+5493513870553?text=Buenas!+Me+contacto+desde+la+página+web"
                 target="blank"
               >
                 {" "}
-                +5493513870553 (María)
+                +54 9 3513870553 (María)
               </a>
             </li>
             <li>
@@ -119,7 +119,7 @@ function page() {
               <a
                 href="https://www.facebook.com/profile.php?id=100085206638363"
                 target="blank"
-                className=" hover:text-slate-400"
+                className=" hover:text-slate-400 whitespace-nowrap"
               >
                 pa'l alma dibujos
               </a>
@@ -129,7 +129,7 @@ function page() {
               <a
                 href="https://www.instagram.com/palalma.dibujos?igsh=c2xiyjlmagh4nwdv"
                 target="blank"
-                className=" hover:text-slate-400"
+                className=" hover:text-slate-400 whitespace-nowrap"
               >
                 palalma.dibujos
               </a>
@@ -139,7 +139,7 @@ function page() {
               <a
                 href="mailto:palalma.argentina@gmail.com"
                 target="blank"
-                className="hover:text-slate-400"
+                className="hover:text-slate-400 whitespace-nowrap"
               >
                 palalma.argentina@gmail.com
               </a>
@@ -150,8 +150,10 @@ function page() {
           </h3>
           <ul>
             <li className="lg:w-3/4 lg:text-lg xl:max-w-[450px] 2xl:max-w-full">
-              Dirección: Duarte Quirós 5223 - B° Lomas del Suquia - Casa interna
-              226
+              Dirección:{" "}
+              <span className="whitespace-nowrap"> Duarte Quirós 5223</span> -{" "}
+              <span className="whitespace-nowrap">Casa interna 226</span> -{" "}
+              <span className="whitespace-nowrap">B° Lomas del Suquia</span>
             </li>
             <li className="lg:text-lg">Localidad: Cordoba capital - CP 5003</li>
             <li className="lg:w-3/4 lg:text-lg">HORARIO DE CONSULTA:</li>
