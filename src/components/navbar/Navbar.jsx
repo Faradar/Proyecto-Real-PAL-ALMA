@@ -13,14 +13,22 @@ const Navbar = () => {
   return (
     <nav className="bg-slate-700/10 md:bg-white h-20 flex items-center justify-between pl-4 md:h-[100px] md:justify-around md:shadow-[0_6px_6px_-1px_rgba(0,0,0,0.3)] md:px-0">
       {/* Logo */}
-      <div className="order-1 md:order-first ml-6 lg:max-w-[150px]">
+      <div className="order-1 md:order-first ml-2 lg:max-w-[150px]">
         <Link href="/">
           <div>
+            <Image
+              src="/navbar/logoSmall2.png"
+              width={64}
+              height={64}
+              alt="Logo Pa'l Alma"
+              className="md:hidden"
+            />
             <Image
               src="/navbar/logoSmall.svg"
               width={64}
               height={64}
               alt="Logo Pa'l Alma"
+              className="hidden md:block"
             />
           </div>
         </Link>
