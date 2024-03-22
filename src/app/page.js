@@ -41,12 +41,20 @@ export default function Home() {
     ? "/inicio/misc-outline-right.svg"
     : "/inicio/misc-outline-right-mobile.svg";
 
-  const carouselImages = [
+  const carouselImagesMobile = [
     "/inicio/carousel3.jpg",
     "/inicio/carousel4.jpg",
     "/inicio/carousel5.jpg",
     "/inicio/carousel1.jpg",
     "/inicio/carousel2.jpg",
+  ];
+
+  const carouselImagesDesktop = [
+    "/inicio/carousel3D.jpg",
+    "/inicio/carousel4D.jpg",
+    "/inicio/carousel5D.jpg",
+    "/inicio/carousel1D.jpg",
+    "/inicio/carousel2D.jpg",
   ];
 
   const productos = [
@@ -136,7 +144,9 @@ export default function Home() {
         </div>
       </section>
       <div className="flex items-center justify-center overflow-hidden mb-10">
-        <Carousel images={carouselImages} />
+        <Carousel
+          images={isMd ? carouselImagesDesktop : carouselImagesMobile}
+        />
       </div>
       <div className="absolute right-0 top-full min-[540px]:top-[600px] md:top-[900px] lg:top-[1100px] xl:top-[1300px] 2xl:top-[1000px] z-[-10]">
         <Image
